@@ -96,3 +96,9 @@ li button:hover{
     transform: scale(1.1);
     background-color: #7D0707;
 }
+
+.contain{
+    max-width: 100%;
+    max-height: 80%;
+    background-color: rgb(255, 127, 127);
+}
