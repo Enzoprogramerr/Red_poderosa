@@ -219,6 +219,45 @@ form {
     margin-top: 1rem
 }
 
+.users-comments{
+    width: 40rem;
+    height: auto;
+    max-height: 100%;
+    background-color: aqua;
+    margin: 1.5rem 0.3rem;
+    border-radius: 1rem;
+}
+
+.perfil_nombre_users{
+    width: 40rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 1rem;
+}
+
+.description_users{
+    width: 40rem;
+    height: auto;
+}
+
+.description_users p{
+    padding: 0rem 0.5rem 1rem 0.5rem;
+}
+
+.perfil_nombre_users img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 0.4rem 0.5rem;
+}
+.perfil_nombre_users h2{
+    margin-top: 1rem;
+}
+
+
+
 footer {
     position: fixed;
     left: 0;
