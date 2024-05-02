@@ -15,7 +15,7 @@ body{
 
 header{
     font-weight: 900;
-    height: 170px;
+    height: 13rem;
     width: 100%;
     background-image: url(../imagenes/fondo_peli.jpg);
     display: flex;
@@ -113,11 +113,6 @@ li button:hover{
     
 }
 
-.publications img{
-    width: 4rem;
-    height: 4rem;
-    background-color: #7D0707;
-}
 
 .perfil_nombre{
     width: 75rem;
@@ -125,9 +120,22 @@ li button:hover{
     background-color: yellow;
 }
 
+.perfil_nombre img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+
+}
+
+.image img {
+    width: 30rem;
+    height: 40rem;
+    
+}
+
 .description{
     width: 75rem;
-    height: 5rem;
+    height: 12rem;
     background-color: green;
 }
 
@@ -135,4 +143,34 @@ li button:hover{
     width: 75rem;
     height: 40rem;
     background-color: coral;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.comments{
+    width: 42rem;
+}
+
+.comments form input[type="text"]{
+    width: 28rem;
+    height: 3.5rem;
+    font-family: "Exo 2", sans-serif;
+    background: none;
+    color: white;
+    border-radius: 2rem;
+    margin: 1rem ;
+    padding-left: 2rem;
+}
+
+.comments form input[type="submit"]{
+    height: 3.5rem;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 60rem;
+
+}
+
+form {
+    width: 40rem ;
+    height: 5rem;
 }
