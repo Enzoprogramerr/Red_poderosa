@@ -3,6 +3,7 @@ html{
     font-family: "Exo 2", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    height: 130rem;
 }
 
 
@@ -10,7 +11,8 @@ html{
 body{
     margin: 0;
     padding: 0;
-    
+    height: 130rem;
+    background-color: black;
 }
 
 header{
@@ -99,8 +101,7 @@ li button:hover{
 
 .contain{
     max-width: 100%;
-    height: 100vh;
-    background-color: rgb(255, 127, 127);
+    height: 115rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -108,41 +109,64 @@ li button:hover{
 
 .navegations{
     width: 75rem;
-    height: 100vh;
-    background-color: blue;
-    
+    height: 90vh;
 }
-
 
 .perfil_nombre{
     width: 75rem;
     height: 5rem;
-    background-color: yellow;
+    margin-top: 1rem;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 1rem;
 }
 
 .perfil_nombre img{
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-
+    margin: 0.5rem;
 }
 
+.perfil_nombre h2{
+    margin-top: 1.5rem;
+    color: white;
+}
+
+.deesc-text{
+    padding: 1rem 1.5rem;
+    text-align: start;
+    word-break: break-all;
+    color: white;  
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 0;
+}
 .image img {
     width: 30rem;
     height: 40rem;
+    border-radius: 0.3rem;
     
 }
 
 .description{
     width: 75rem;
-    height: 12rem;
-    background-color: green;
+    height: auto;
+    background-color: rgb(26, 24, 24);
+    padding-bottom: 1rem ;
+    border-bottom: 0.1rem solid white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .image{
     width: 75rem;
     height: 40rem;
-    background-color: coral;
+    background-color: rgb(15, 14, 14);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -157,20 +181,49 @@ li button:hover{
     height: 3.5rem;
     font-family: "Exo 2", sans-serif;
     background: none;
-    color: white;
     border-radius: 2rem;
     margin: 1rem ;
     padding-left: 2rem;
+    color: white;
+    border-color: #c92121;
+}
+
+.comments form input[type="text"]::placeholder{
+    color: whitesmoke;
 }
 
 .comments form input[type="submit"]{
-    height: 3.5rem;
+    height: auto;
     font-family: "Exo 2", sans-serif;
-    font-weight: 60rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #c92121;
+    padding: 0.5rem;
 
+}
+
+.comments form input[type="submit"]::placeholder{
+    font-size: 1.5rem;
+}
+
+.comments form input[type="submit"]:hover{
+    transform: scale(1.1);
 }
 
 form {
     width: 40rem ;
     height: 5rem;
+    margin-top: 1rem
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    background: #999;
 }
