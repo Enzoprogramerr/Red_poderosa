@@ -9,23 +9,41 @@
     <header>
         <nav>
             <ul>
-                <li><a href="paginaprincipal.html">Inicio</a>
-                </li>
-                <li><a href="peliculas.html">Peliculas</a>
-                </li>
-                <li><a href="perfil.html">Perfil</a>
-                </li>
-                <li><a href="Cerrarsecion.html">Cerrar secion</a>
-                </li>
-                <li>
-                    <form action="" method="post">
-                    <input type="text" name="keyword" placeholder="Buscar aqui">
-                    <button type="submit">Buscar</button>
-                    </form>
-                </li>
+                <li><img src="imagenes/logo_img.jpeg" alt="logo de red social"></li>
+                <li class="section"><a href="inicio_publicar.html">Inicio</a></li>
+                <li class="section"><a href="peliculas.html">Peliculas</a></li>
+                <li><button type="button">Cerrar sesion</button></li>
             </ul>
         </nav>
     </header>
+
+    <div class="perfil">
+        <div class="foto_perfil">
+            <img src="/HTML/imagenes/Logo.ico" alt="Foto de perfil"/>
+        </div>
+        <div class="informacion ">
+            <button type="submit">  Editar perfil </button>
+            <h2>Nombre de Usuario</h2>
+            <p>Correo Electrónico: usuario@gmail.com</p>
+            <p>Fecha de Nacimiento: 01 de enero de 2000</p>
+            <p>Ubicación: Ciudad, País</p>
+            <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            
+            <form action="#" method="post">
+                <label for="nombre_usuario">Nombre: </label>
+                <input type="text" name="nombre_usuario"/>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" name="correo"/>
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" name="fecha_nacimiento"/>
+                <label for="ubicacion">Ubicación:</label><br>
+                <input type="text" name="ubicacion" />
+                <label for="descripcion">Descripción:</label>
+                <textarea name="descripcion" rows="4" cols="50" placeholder="Escribe algo sobre ti.."></textarea>
+                <input type="submit" value="Guardar Cambios">
+            </form>
+        </div>
+    </div>
     
 </body>
 </html>
