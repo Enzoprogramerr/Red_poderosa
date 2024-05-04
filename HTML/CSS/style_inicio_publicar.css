@@ -223,9 +223,11 @@ form {
     width: 40rem;
     height: auto;
     max-height: 100%;
-    background-color: aqua;
+    background-color: rgb(3, 0, 0);
     margin: 1.5rem 0.3rem;
     border-radius: 1rem;
+    border-bottom: 0.1rem;
+
 }
 
 .perfil_nombre_users{
@@ -244,6 +246,11 @@ form {
 
 .description_users p{
     padding: 0rem 0.5rem 1rem 0.5rem;
+    border-bottom: 0.1rem solid;
+    border-color: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    color: rgb(204, 199, 199);
 }
 
 .perfil_nombre_users img{
@@ -251,9 +258,12 @@ form {
     height: 3rem;
     border-radius: 50%;
     margin: 0.4rem 0.5rem;
+    opacity: 0.9;
 }
 .perfil_nombre_users h2{
     margin-top: 1rem;
+    color: white;
+    font-size: 1.3rem;
 }
 
 
