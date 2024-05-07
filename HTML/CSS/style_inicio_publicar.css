@@ -12,7 +12,7 @@ body{
     margin: 0;
     padding: 0;
     height: 130rem;
-    background-color: black;
+    background-color: #201849;
 }
 
 header{
@@ -55,6 +55,7 @@ li{
     border-color: black;
     border-radius: 1.5rem;
     background-color: black;
+    font-size: 1.8rem;
 }
 
 a{
@@ -79,7 +80,7 @@ li img{
     height: 60px;
     width: 60px;
     padding: 0;
-    border-radius: 2rem;
+    border-radius: 3rem;
 }
 
 li button{
@@ -109,7 +110,8 @@ li button:hover{
 
 .navegations{
     width: 75rem;
-    height: 90vh;
+    height: 100vh;
+    background-color: black;
 }
 
 .perfil_nombre{
@@ -275,4 +277,87 @@ footer {
     height: 30px;
     width: 100%;
     background: #999;
+}
+
+.contain_peliculas{
+    max-width: 100%;
+    height: 115rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navegation_peliculas{
+    width: 80rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(15, 14, 14);
+}
+
+.section_movie{
+    border-bottom: 0.1rem solid;
+    border-color: white;
+    border-bottom-right-radius: 1rem;
+}
+
+.title{
+    width: 100%;
+    height: 5rem;
+    margin-top: 1rem;
+    display: flex;
+    align-content: center;
+}
+
+
+.title img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+.title h2{
+    display: inline-block;
+    margin: 1rem 1rem 1rem 1.5rem;
+    color: white;
+}
+.title .form_categori{
+    display: inline-block;
+    margin-left: 4rem;
+}
+
+
+
+.title .form_categori label{
+    font-size: 1.6rem;
+    color: white;
+}
+
+.form_categori{
+    width: auto;
+    height: 4rem;
+}
+
+.form_categori input[type="radio"]:hover{
+    cursor: pointer;
+}
+
+.best_movie{
+    display: flex;
+    width: 100vh;
+    height: 20rem;
+    margin: 1rem 0 1rem 7rem;
+}
+
+.best_movie img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+.best_movie img:hover{
+    cursor: pointer;
+    width: 10rem;
+    opacity: 1;
+    filter: contrast(120%);
 }
