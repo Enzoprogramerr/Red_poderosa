@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/perfil.css">
+    <link rel="shortcut icon" href="imagenes/Logo.ico" type="image/x-icon">
     <title>Perfil</title>
 </head>
 <body>
@@ -19,16 +21,18 @@
 
     <div class="perfil">
         <div class="foto_perfil">
-            <img src="imagenes/Logo.ico" alt="Foto-de-perfil"/>
+            <img src="imagenes/foto_persona1.png" alt="Foto-de-perfil"/>
+        </div>
+        <div class="edit_perfil"><button type="submit">  Editar perfil </button>
         </div>
         <div class="informacion ">
-            <button type="submit">  Editar perfil </button>
-            <h2>Nombre de Usuario</h2>
+            <h2>Yoli bringas</h2>
             <p>Correo Electrónico: usuario@gmail.com</p>
             <p>Fecha de Nacimiento: 01 de enero de 2000</p>
             <p>Ubicación: Ciudad, País</p>
             <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            
+        </div>
+        <div id="edit_data">
             <form action="#" method="post">
                 <label for="nombre_usuario">Nombre: </label>
                 <input type="text" name="nombre_usuario"/>
