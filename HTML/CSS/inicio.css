@@ -1,0 +1,47 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ad3636;
+    background-image: url('../imagenes/borde.png');
+    background-size: 01; /* Para cubrir todo el elemento */
+    background-position: top center; /* Para centrar la imagen */
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px; /* Añade espacio entre los elementos hijos */
+}
+
+.min_content {
+    flex: 1; /* Ocupa todo el espacio restante */
+    margin-right: 20px; /* Espacio entre este div y el siguiente */
+}
+
+.form {
+    flex: 2; /* Ocupa todo el espacio restante */
+    background-color: #efececb3;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+
+button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h2 {
+    color: red;
+}
+
+
