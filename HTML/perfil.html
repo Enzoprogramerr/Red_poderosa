@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
+    <title>Editar Perfil</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="paginaprincipal.html">Inicio</a>
-                </li>
-                <li><a href="peliculas.html">Peliculas</a>
-                </li>
-                <li><a href="perfil.html">Perfil</a>
-                </li>
-                <li><a href="Cerrarsecion.html">Cerrar secion</a>
-                </li>
-                <li>
-                    <form action="" method="post">
-                    <input type="text" name="keyword" placeholder="Buscar aqui">
-                    <button type="submit">Buscar</button>
-                    </form>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
-</body>
-</html>
-    
+
+<h2>Editar Perfil</h2>
+
+<form action="/guardar_perfil" method="post" enctype="multipart/form-data">
+    <label for="usuario">Nombre de Usuario:</label>
+    <input type="text" id="usuario" name="usuario" required><br><br>
+
+    <label for="nombre">Nombre Completo:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+    <label for="foto">Foto:</label>
+    <input type="file" id="foto" name="foto" accept="image/*"><br><br>
+
+    <input type="submit" value="Guardar Cambios">
+</form>
+
 </body>
 </html>
