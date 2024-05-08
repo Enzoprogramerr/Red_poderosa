@@ -1,0 +1,363 @@
+html{
+    font-size: 62.5%;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    height: 130rem;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 130rem;
+    background-color: #201849;
+}
+
+header{
+    font-weight: 900;
+    height: 13rem;
+    width: 100%;
+    background-image: url(../imagenes/fondo_peli.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+
+ul{
+    max-width: 100%;
+    height: 300 rem;
+    display: flex;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 0rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    
+}
+
+li{
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem;
+}
+
+.section:hover{
+    transform: scale(1.1);
+    background-color: #7D0707;
+}
+
+.section {
+    border-color: black;
+    border-radius: 1.5rem;
+    background-color: black;
+    font-size: 1.8rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:white;
+}
+
+li:nth-child(1){
+    flex-grow: 0.2;
+}
+
+li button{
+    padding-right: 1rem;
+
+}
+
+li img{
+    height: 60px;
+    width: 60px;
+    padding: 0;
+    border-radius: 3rem;
+}
+
+li button{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 900;
+    border-radius: 2rem;
+    padding: 0.8rem;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+li button:hover{
+    transform: scale(1.1);
+    background-color: #7D0707;
+}
+
+.contain{
+    max-width: 100%;
+    height: 115rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navegations{
+    width: 75rem;
+    height: 100vh;
+    background-color: black;
+}
+
+.perfil_nombre{
+    width: 75rem;
+    height: 5rem;
+    margin-top: 1rem;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 1rem;
+}
+
+.perfil_nombre img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+.perfil_nombre h2{
+    margin-top: 1.5rem;
+    color: white;
+}
+
+.deesc-text{
+    padding: 1rem 1.5rem;
+    text-align: start;
+    word-break: break-all;
+    color: white;  
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.image img {
+    width: 30rem;
+    height: 40rem;
+    border-radius: 0.3rem;
+    
+}
+
+.description{
+    width: 75rem;
+    height: auto;
+    background-color: rgb(26, 24, 24);
+    padding-bottom: 1rem ;
+    border-bottom: 0.1rem solid white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.image{
+    width: 75rem;
+    height: 40rem;
+    background-color: rgb(15, 14, 14);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.comments{
+    width: 42rem;
+}
+
+.comments form input[type="text"]{
+    width: 28rem;
+    height: 3.5rem;
+    font-family: "Exo 2", sans-serif;
+    background: none;
+    border-radius: 2rem;
+    margin: 1rem ;
+    padding-left: 2rem;
+    color: white;
+    border-color: #c92121;
+}
+
+.comments form input[type="text"]::placeholder{
+    color: whitesmoke;
+}
+
+.comments form input[type="submit"]{
+    height: auto;
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #c92121;
+    padding: 0.5rem;
+
+}
+
+.comments form input[type="submit"]::placeholder{
+    font-size: 1.5rem;
+}
+
+.comments form input[type="submit"]:hover{
+    transform: scale(1.1);
+}
+
+form {
+    width: 40rem ;
+    height: 5rem;
+    margin-top: 1rem
+}
+
+.users-comments{
+    width: 40rem;
+    height: auto;
+    max-height: 100%;
+    background-color: rgb(3, 0, 0);
+    margin: 1.5rem 0.3rem;
+    border-radius: 1rem;
+    border-bottom: 0.1rem;
+
+}
+
+.perfil_nombre_users{
+    width: 40rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 1rem;
+}
+
+.description_users{
+    width: 40rem;
+    height: auto;
+}
+
+.description_users p{
+    padding: 0rem 0.5rem 1rem 0.5rem;
+    border-bottom: 0.1rem solid;
+    border-color: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    color: rgb(204, 199, 199);
+}
+
+.perfil_nombre_users img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 0.4rem 0.5rem;
+    opacity: 0.9;
+}
+.perfil_nombre_users h2{
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    background: #999;
+}
+
+.contain_peliculas{
+    max-width: 100%;
+    height: 115rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navegation_peliculas{
+    width: 80rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(15, 14, 14);
+}
+
+.section_movie{
+    border-bottom: 0.1rem solid;
+    border-color: white;
+    border-bottom-right-radius: 1rem;
+}
+
+.title{
+    width: 100%;
+    height: 5rem;
+    margin-top: 1rem;
+    display: flex;
+    align-content: center;
+}
+
+
+.title img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+.title h2{
+    display: inline-block;
+    margin: 1rem 1rem 1rem 1.5rem;
+    color: white;
+}
+.title .form_categori{
+    display: inline-block;
+    margin-left: 4rem;
+}
+
+
+
+.title .form_categori label{
+    font-size: 1.6rem;
+    color: white;
+}
+
+.form_categori{
+    width: auto;
+    height: 4rem;
+}
+
+.form_categori input[type="radio"]:hover{
+    cursor: pointer;
+}
+
+.best_movie{
+    display: flex;
+    width: 100vh;
+    height: 20rem;
+    margin: 1rem 0 1rem 7rem;
+}
+
+.best_movie img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+.best_movie img:hover{
+    cursor: pointer;
+    width: 10rem;
+    opacity: 1;
+    filter: contrast(120%);
+}

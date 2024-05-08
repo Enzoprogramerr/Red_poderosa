@@ -3,7 +3,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #ad3636;
+    background-image: url('../imagenes/borde.png');
+    background-size: 01; /* Para cubrir todo el elemento */
+    background-position: top center; /* Para centrar la imagen */
 }
 
 .content {
@@ -21,13 +24,9 @@ body {
 
 .form {
     flex: 2; /* Ocupa todo el espacio restante */
-    background-color: white;
+    background-color: #efececb3;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background-image: url('C:\Users\gonza\OneDrive\Escritorio\Red_poderosa\HTML\imagenes');
-    background-size: cover; /* Para cubrir todo el elemento */
-    background-position: center; /* Para centrar la imagen */
 }
 
 
