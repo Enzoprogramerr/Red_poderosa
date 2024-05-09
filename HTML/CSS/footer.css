@@ -1,0 +1,137 @@
+html{
+    font-size: 62.5%;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    height: 130rem;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 130rem;
+    background-color: #201849;
+}
+
+header{
+    font-weight: 900;
+    height: 13rem;
+    width: 100%;
+    background-image: url(../imagenes/fondo_peli.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+
+.navegations_pub{
+    max-width: 100%;
+    height: 300rem;
+    display: flex;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 0rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navegations_pub li{
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem;
+}
+
+.section:hover{
+    transform: scale(1.1);
+    background-color: #7D0707;
+}
+
+.section {
+    border-color: black;
+    border-radius: 1.5rem;
+    background-color: black;
+    font-size: 1.8rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:white;
+}
+
+li:nth-child(1){
+    flex-grow: 0.2;
+}
+
+li button{
+    padding-right: 1rem;
+
+}
+
+li img{
+    height: 60px;
+    width: 60px;
+    padding: 0;
+    border-radius: 3rem;
+}
+
+li button{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 900;
+    border-radius: 2rem;
+    padding: 0.8rem;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+li button:hover{
+    transform: scale(1.1);
+    background-color: #7D0707;
+}
+
+.contain{
+    max-width: 100%;
+    height: 115rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navegations{
+    width: 75rem;
+    height: 100%;
+    background-color: black;
+}
+
+h1{
+    color: whitesmoke;
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 0;
+    color: whitesmoke;
+}
+
+h2 {
+    color: whitesmoke;
+}
+li{
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.sec_footer{
+    margin: 1rem 2rem;
+}
