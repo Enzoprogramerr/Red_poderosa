@@ -15,7 +15,7 @@
         <nav>
             <ul>
                 <li><img src="imagenes/logo_img.jpeg" alt="logo de red social"></li>
-                <li class="section"><a href="inicio_publicar.html">Inicio</a></li>
+                <li class="section"><a href="inicio_publicar.html?">Inicio</a></li>
                 <li class="section"><a href="peliculas.html">Peliculas</a></li>
                 <li class="section"><a href="perfil.html">Perfil</a></li>
                 <li><button onclick="location.href='inicio.html'">Cerrar sesion</button></li>
@@ -24,6 +24,18 @@
     </header>
     <main>
         <div class="contain">
+            <aside>
+                <div class="search_icon">
+                    <img src="imagenes/icon_search.png" alt="buscador de posteos">
+                    <form class="search_form">
+                        <input type="text" placeholder="Buscar" name="search">
+                    </form>
+                </div>
+                <div class="redirection">
+                    <h2>¡Puedes calificar y recomendar peliculas!</h2>
+                </div>
+                <button onclick="location.href='peliculas.html'">Calificar</button>
+            </aside>
             <div class="navegations">
                 <section>
                     <div class="publications">

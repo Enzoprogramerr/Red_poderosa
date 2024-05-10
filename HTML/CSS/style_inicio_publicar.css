@@ -12,7 +12,7 @@ body{
     margin: 0;
     padding: 0;
     height: 130rem;
-    background-color: #201849;
+    background-color:black;
 }
 
 header{
@@ -47,7 +47,7 @@ li{
 
 .section:hover{
     transform: scale(1.1);
-    background-color: #7D0707;
+    background-color: rgb(230, 4, 4);
 }
 
 .section {
@@ -101,27 +101,105 @@ li button:hover{
 
 .contain{
     max-width: 100%;
-    height: 115rem;
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
-.navegations{
+aside{
+    width: 18%;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search_icon{
+    display: flex;
+    margin: 2rem 0;
+    justify-content: center;
+    background-color: rgb(15, 14, 14);
+    padding: 0.5rem;
+    border: 0.5rem red;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+
+.search_icon .search_form{
+    width: auto;
+    height: auto;
+}
+
+.search_icon img{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.3rem;
+}
+
+.search_form input[type="text"]{
+    width: 9rem;
+    background: none;
+    border: none;
+    padding-top: 0.3rem;
+    padding-left: 3rem;
+    color: white;
+    font-family: "Exo 2", sans-serif;
+}
+
+.search_form input[type="text"]::placeholder{
+    color: whitesmoke;
+    justify-content: baseline;
+}
+
+.contain .redirection{
+    max-width: 9rem;
+    min-width: 9rem;
+    height: auto;
+    background-color: red;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+aside button{
+    width: 8rem;
+    margin-top: 1rem;
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.5rem;
+    color: red;
+    padding: 0.5rem;
+    background: none;
+    cursor: alias;
+    border: none;
+}
+
+aside button:hover{
+    border:solid;
+    border-color: red;
+    border-radius: 0.7rem;
+}
+
+.contain .navegations{
     width: 75rem;
     height: 100%;
     background-color: black;
+    justify-self: center;
+    justify-content: center;
+    
 }
+
 
 .perfil_nombre{
     width: 75rem;
     height: 5rem;
     margin-top: 1rem;
-    background-color: black;
+    background-color: rgb(15, 14, 14);
     display: flex;
     flex-direction: row;
     align-content: center;
     gap: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .perfil_nombre img{
@@ -162,11 +240,9 @@ p {
 .description{
     width: 75rem;
     height: auto;
-    background-color: rgb(26, 24, 24);
+    background-color: rgb(15, 14, 14);
     padding-bottom: 1rem ;
     border-bottom: 0.1rem solid white;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
 }
 
 .image{
@@ -191,7 +267,7 @@ p {
     margin: 1rem ;
     padding-left: 2rem;
     color: white;
-    border-color: #c92121;
+    border-color: red;
 }
 
 .comments form input[type="text"]::placeholder{
@@ -206,7 +282,7 @@ p {
     cursor: pointer;
     background: none;
     border: none;
-    color: #c92121;
+    color: red;
     padding: 0.5rem;
 
 }
@@ -219,7 +295,7 @@ p {
     transform: scale(1.1);
 }
 
-form {
+.comments form{
     width: 40rem ;
     height: 5rem;
     margin-top: 1rem
@@ -229,7 +305,7 @@ form {
     width: 40rem;
     height: auto;
     max-height: 100%;
-    background-color: rgb(3, 0, 0);
+    background-color: rgb(15, 14, 14);
     margin: 1.5rem 0.3rem;
     border-radius: 1rem;
     border-bottom: 0.1rem;
@@ -328,6 +404,7 @@ footer {
 .title .form_categori{
     display: inline-block;
     margin-left: 4rem;
+    margin-top: 0.8rem;
 }
 
 
