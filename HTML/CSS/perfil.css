@@ -54,10 +54,23 @@ body{
 }
 
 .foto_perfil img{
-    width: 8rem;
-    height: 8rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 30%;
-    margin: 0.5rem;
+    margin-left: 40%;
+    margin-top: 1rem;
+}
+
+.boton_foto{
+    color: rgb(33, 33, 233);
+    margin-left: 42%;
+    text-decoration: underline;
+    background-color:transparent;
+}
+
+#editarFotoPerfil{
+    display:none;
+    margin-left:12rem ;
 }
 
 .edit_perfil{
@@ -67,21 +80,24 @@ body{
     margin-right: 2rem;
 }
 
-p{
+.boton_perfil{
+    background-color: rgba(255, 0, 0, 0.774);
+    border-radius: 6px;
+    padding:10px 20px;
+}
+
+section{
     margin-left: 5rem;
     line-height: 2rem;
+    margin-bottom: 10rem;
 }
-h2{
-    margin-left: 5rem;
-}
+
 #edit_data form{
     width: 50%;
     margin: auto;
     margin-top: 5rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: #0b042e;
 }
-
-
 
