@@ -18,30 +18,25 @@ body {
     
 }
 
-.min_content {
-    flex: 1; /* Ocupa todo el espacio restante */
-    margin-right: 20px; /* Espacio entre este div y el siguiente */
-}
-
 
 .form {
-    flex: 1; /* Ocupa todo el espacio restante */
-    padding: 50px;
-    border-radius: 200px;
+    padding: 200px;
+    border-radius: 600px;
     background-image: url('../imagenes/logo_img.jpeg');
     background-size: 400px 400px;
     background-position: center; /* Para centrar la imagen */
-    width: 100px; /* Ancho deseado */
-    height: 100px; /* Altura deseada */
+
 }
 
 
 .form2 {
-    flex: 2; /* Ocupa todo el espacio restante */
+    
     background-color: #f9f7f7;
     padding: 30px;
     border-radius: 10px;
-   
+    width: 600px;
+    position: relative;
+    left: -10px;
 }
 
 
