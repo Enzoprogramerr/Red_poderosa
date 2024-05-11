@@ -3,19 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/pelicula.css">
     <link rel="stylesheet" href="CSS/style_inicio_publicar.css">
     <title>Pelicula</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <ul>
-            <li><img src="imagenes/logo_img.jpeg" alt="logo de red social"></li>
-            <li class="section"><a href="inicio.html">Inicio</a></li>
-            <li class="section"><a href="peliculas.html">Peliculas</a></li>
-            <li class="section"><a href="perfil.html">Perfil</a></li>
-            <li><button>Cerrar sesion</button></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><img src="imagenes/Logo.ico" alt="logo de red social"></li>
+                <li class="section"><a href="inicio_publicar.html">Inicio</a></li>
+                <li class="section"><a href="peliculas.html">Peliculas</a></li>
+                <li><button type="button">Cerrar sesion</button></li>
+            </ul>
+        </nav>
     </header>
-    
+    <main>
+        <section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8nNa5A_MRBU?si=zXXpCDv-xsz48BNj" title="Trailer SPIDER MAN: NO WAY HOME (Sin Camino a Casa)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>SPIDER MAN: NO WAY HOME (Sin Camino a Casa ) Trailer</p>
+        </section>
+
+        <article class="contenedor">
+            <img src="imagenes/img_spiderman.jpeg" alt="imagen de la pelicula spiderman">
+            <div class="descripcion">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque maxime itaque quas ipsum. Dicta iusto, beatae deserunt nam corporis et mollitia qui unde itaque ipsum repudiandae omnis placeat expedita nemo?. 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, eligendi soluta dignissimos omnis unde aliquam expedita aperiam, dicta ad natus, eius nesciunt? Minus a distinctio eaque saepe quis aliquam et?. 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, eligendi soluta dignissimos omnis unde aliquam expedita aperiam, dicta ad natus, eius nesciunt? Minus a distinctio eaque saepe quis aliquam et?. 
+                </p>
+            </div>
+        </article>
+
+        <article class="contenedor2">
+            <div class="formulario-critica">
+                <h2>AGREGAR CRITICA</h2>
+                <input class="coments" type="text" placeholder="Ingresar texto">
+                <input class="button" type="submit" value="Agregar">
+                <input class="button" type="submit" value="Recomendada">
+                <input class="button" type="submit" value="No Recomendada">
+                <div class="rating">
+                    <input type="radio" name="rate" id="rating-opt5" data-idx="0" hidden>
+                    <label for="rating-opt5"><span>Muy Bueno</span></label>
+
+                    <input type="radio" name="rate" id="rating-opt4" data-idx="1" hidden>
+                    <label for="rating-opt4"><span>Bueno</span></label>
+
+                    <input type="radio" name="rate" id="rating-opt3" data-idx="2" hidden>
+                    <label for="rating-opt3"><span>Normal</span></label>
+
+                    <input type="radio" name="rate" id="rating-opt2" data-idx="3" hidden>
+                    <label for="rating-opt2"><span>Malo</span></label>
+
+                    <input type="radio" name="rate" id="rating-opt1" data-idx="4" hidden>
+                    <label for="rating-opt1"><span>Muy Malo</span></label>
+            </div>
+        </article>
+    </main>
+
 </body>
 </html>

@@ -1,0 +1,141 @@
+* {
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:"GRAD" 0;
+}
+
+section iframe {
+    margin-top: 30px;
+    margin-left: 30%;
+}
+
+section p {
+    text-align: center;
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    background-color:none;
+}
+
+.contenedor img {
+    margin-top: 5%;
+    width: 240px;
+    height: auto;
+    margin-left: 30%;
+    margin-right: 1%;
+}
+
+.descripcion p {
+    margin-top: 1%;
+    margin-right: 25%;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.formulario-critica h2{
+    margin-top: 1%;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+}
+
+.formulario-critica { 
+    width: 400px;
+    margin-left: 35%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: none;
+    padding: 30px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.coments {
+    width: 80%;
+    background: none;
+    padding: 9px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: 2px solid red;
+    font-size: 15px;
+}
+
+.coments::placeholder{
+    color: white;
+}
+
+.formulario-critica .button{
+    width: 31.5%;
+    background: none;
+    border: none;
+    padding: 7px;
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.1);
+
+}
+
+.rating {
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    padding: 0 50px 8%;
+    color: gray;
+}
+
+label{
+    float: right;
+    padding: 0;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+label::before{
+    content: "\2606";
+    padding-bottom: 8px;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+span{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    font-size: 2rem;
+    white-space: nowrap;
+    transition: 0.15s ease-out;
+    pointer-events: none;
+    letter-spacing: -2px;
+    transform: translateY(-50%);
+}
+
+label:hover span{
+    opacity: 1;
+    transform: none;
+    letter-spacing: 0;
+}
+
+input:checked ~ label:before{
+    content: "\2605";
+    color: orange;
+    filter: drop-shadow(0 0 4px);
+    transform: rotate(.2turn);
+    transition-delay: calc(0.1 * attr(data-idx integer));
+}
