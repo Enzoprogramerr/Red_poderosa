@@ -5,8 +5,6 @@ html{
     font-style: normal;
 }
 
-
-
 body{
     margin: 0;
     padding: 0;
@@ -107,6 +105,7 @@ main{
     height: auto;
     display: flex;
     flex-direction: row;
+    margin-top: 1rem;
 }
 
 aside{
@@ -146,13 +145,13 @@ aside{
     border: none;
     padding-top: 0.3rem;
     padding-left: 3rem;
-    color: white;
     font-family: "Exo 2", sans-serif;
 }
 
 .search_form input[type="text"]::placeholder{
-    color: whitesmoke;
+    color: white;
     justify-content: baseline;
+    font-family: "Exo 2", sans-serif;
 }
 
 .contain .redirection{
@@ -183,7 +182,7 @@ aside button:hover{
 }
 
 .contain .navegations{
-    width: 75rem;
+    width: 80rem;
     height: 100%;
     background-color: black;
     justify-self: center;
@@ -193,7 +192,7 @@ aside button:hover{
 
 
 .perfil_nombre{
-    width: 75rem;
+    /*width: 75rem;*/
     height: 5rem;
     margin-top: 1rem;
     background-color: rgb(15, 14, 14);
@@ -206,7 +205,7 @@ aside button:hover{
 }
 
 .perfil_nombre img{
-    width: 4rem;
+    /*width: 4rem;*/
     height: 4rem;
     border-radius: 50%;
     margin: 0.5rem;
@@ -241,7 +240,7 @@ p {
 }
 
 .description{
-    width: 75rem;
+    /*width: 75rem;*/
     height: auto;
     background-color: rgb(15, 14, 14);
     padding-bottom: 1rem ;
@@ -249,7 +248,7 @@ p {
 }
 
 .image{
-    width: 75rem;
+    /*width: 75rem;*/
     height: 40rem;
     background-color: rgb(15, 14, 14);
     display: flex;
@@ -281,13 +280,11 @@ p {
     height: auto;
     font-family: "Exo 2", sans-serif;
     font-size: 1.5rem;
-    border-radius: 2rem;
     cursor: pointer;
     background: none;
     border: none;
     color: red;
     padding: 0.5rem;
-
 }
 
 .comments form input[type="submit"]::placeholder{
@@ -351,15 +348,22 @@ p {
     font-size: 1.3rem;
 }
 
-
-
 footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    height: 30px;
+    height: 3.5rem;
     width: 100%;
-    background: #999;
+    margin-top: 1rem;
+    background: #511111;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer a{
+    color: whitesmoke;
+    font-size: 1.1rem;
 }
 
 .contain_peliculas{
@@ -367,18 +371,19 @@ footer {
     height: auto;
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 
 .navegation_peliculas{
-    width: 75rem;
+    width: 80rem;
     height: 100%;
     display: flex;
     flex-direction: column;
     background-color: rgb(15, 14, 14);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    margin-top: 1rem;
 }
 
 .contain_peliculas .redirection{
