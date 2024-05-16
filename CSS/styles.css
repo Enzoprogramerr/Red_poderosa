@@ -2,9 +2,7 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ad3636;
     background-image: url('../imagenes/borde.png');
-    background-size: 12; /* Para cubrir todo el elemento */
     background-position: top center; /* Para centrar la imagen */
 }
 
@@ -41,8 +39,9 @@
     color: black;
 }
 
-.ul_index .li_index{
-    color: black;
+.ul_index li{
+    color: rgb(0, 0, 0);
+    text-decoration: dotted;
 }
 
 .a_index{
@@ -88,7 +87,7 @@ header{
     
 }
 
-ul{
+.nav_header{
     max-width: 100%;
     height: 300 rem;
     display: flex;
@@ -101,7 +100,7 @@ ul{
     list-style-type: none;
 }
 
-li{
+.nav_header li{
     color: white;
     text-decoration: none;
     padding: 0.8rem;

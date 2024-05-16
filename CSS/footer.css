@@ -37,7 +37,7 @@ header{
     justify-content: end;
 }
 
-.navegations_pub{
+.nav_header{
     max-width: 100%;
     display: flex;
     font-size: 2rem;
@@ -49,7 +49,7 @@ header{
     list-style-type: none;
 }
 
-.navegations_pub li{
+.nav_header li{
     color: white;
     text-decoration: none;
     padding: 0.8rem;
