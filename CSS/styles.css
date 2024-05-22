@@ -89,7 +89,6 @@ header{
 
 .nav_header{
     max-width: 100%;
-    height: 300 rem;
     display: flex;
     font-size: 2rem;
     margin: 1rem;
@@ -172,7 +171,8 @@ main{
     margin-top: 1rem;
 }
 
-/* -------------------------------------------------------------------------------------------*/
+/* -------------------------------------------------------------------------------------------
+SECCION DE PELICULA*/
 
 
 .sec_pel iframe {
@@ -756,4 +756,43 @@ footer {
 footer a{
     color: whitesmoke;
     font-size: 1.1rem;
+}
+
+/*---------------------------------------------------------------------------------------------------
+AQUI DEBAJO EMPIEZA FOOTER*/
+
+.navegations_footer{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(15, 14, 14);
+    /*display: flex;
+    flex-direction:column;
+    justify-content: center;
+    color: antiquewhite;*/
+}
+
+.h1_footer{
+    color: red;
+    font-size: 2.6rem;
+    margin: 2rem 0 1rem 0;
+    border-bottom: 2px solid #511111;
+    padding-bottom: 0.8rem;
+}
+
+h2{
+    color:white;
+    margin: 2rem 0 1rem 0;
+    font-size: 2rem;
+}
+
+li{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    margin-left: 2rem;
+}
+
+.sec_footer{
+    margin-left: 1rem;
 }
