@@ -63,6 +63,9 @@
 /*---------------------------------------------------------------------------------------------------------------
 ARRIBA REFIERE A INDEX*/
 
+
+/*---------------------------------------------------------------------------------------------------------------
+DEBAJO CONTIENE CRACTERISTICAS GENERALES QUE COMPARTEN TODOS LOS HTML*/
 html{
     font-size: 62.5%;
     font-family: "Exo 2", sans-serif;
@@ -162,6 +165,7 @@ li button:hover{
 
 main{
     height: 100%;
+    margin-bottom: 5rem;
 }
 
 .contain{
@@ -449,6 +453,7 @@ aside{
     padding-top: 0.3rem;
     padding-left: 3rem;
     font-family: "Exo 2", sans-serif;
+    color:white
 }
 
 .search_form input[type="text"]::placeholder{
@@ -548,12 +553,10 @@ p {
 
 
 .comments{
-    width: 45rem;
-    height: 40rem;
-    background-color: hsl(0, 89%, 22%);
+    width: 40rem;
     margin-left: 10rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: space-between;
 }
 
@@ -593,20 +596,16 @@ p {
 }
 
 .comments form{
-    width: 40rem ;
     height: 5rem;
-    margin-top: 1rem;
 }
 
 .users-comments{
-    width: 40rem;
     height: auto;
     max-height: 100%;
     background-color: rgb(15, 14, 14);
-    margin: 1.5rem 0.3rem;
+    margin-top: 1.5rem ;
     border-radius: 1rem;
     border-bottom: 0.1rem;
-
 }
 
 .perfil_nombre_users{
