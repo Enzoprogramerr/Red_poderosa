@@ -395,14 +395,14 @@ input:checked ~ label:before{
     margin-top: 2rem;
 }
 
-form{
+.edit_data form{
     background-color: #7D0707;
     width: 50rem;
-    margin-left: 9rem;
+    margin-left: 10rem;
     padding: 1rem;
     display: none;
 }
-form label, form input, form textarea{
+.edit_data form label, form input, form textarea{
     font-family: "Exo 2", sans-serif;
     font-size: 1.5rem;
 }
