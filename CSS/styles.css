@@ -312,7 +312,7 @@ label:hover span{
     letter-spacing: 0;
 }
 
-input:checked ~ label:before{
+.rating input:checked ~ label:before{
     content: "\2605";
     color: orange;
     filter: drop-shadow(0 0 4px);
