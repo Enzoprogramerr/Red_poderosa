@@ -197,7 +197,6 @@ DEBAJO SECCION DE PELICULA*/
 .contain_port_pel {
     display: flex;
     align-items: center;
-    background-color:none;
     margin-top: 10%;
 }
 
@@ -212,8 +211,8 @@ DEBAJO SECCION DE PELICULA*/
 
 .description_pel p {
     margin-top: 1%;
-    margin-left: 2%;
-    margin-right: 25%;
+    margin-left: 1rem;
+    margin-right: 2rem;
     text-align: justify;
     font-size: 18px;
 }
@@ -269,11 +268,17 @@ DEBAJO SECCION DE PELICULA*/
 }
 
 .rating {
-    display: inline-block;
-    font-size: 0;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    font-size: 5rem;
     position: relative;
     padding: 0 50px 8%;
-    color: gray;
+    color: #ffc904;
+}
+
+.label_pelicula [type="radio"]:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .label_pelicula label{
@@ -303,7 +308,7 @@ span{
     transition: 0.15s ease-out;
     pointer-events: none;
     letter-spacing: -2px;
-    transform: translateY(-50%);
+    transform: translateY(50%);
 }
 
 label:hover span{
@@ -324,7 +329,6 @@ label:hover span{
 /* perfil.html*/
 .perfil{     
     width: 80rem;
-    height: 100rem;
     margin: auto;
     display: flex;
     flex-direction:column;
