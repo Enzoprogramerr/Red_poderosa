@@ -1,5 +1,7 @@
 .body_index {
-    font-family: Arial, sans-serif;
+    font-size: 62.5%;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
     margin: 0;
     padding: 0;
     background-image: url('../imagenes/borde.png');
@@ -34,7 +36,7 @@
 }
 
 .p_index{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     margin: 0;
     color: black;
 }
@@ -246,6 +248,8 @@ DEBAJO SECCION DE PELICULA*/
     margin-bottom: 10px;
     border: 2px solid red;
     font-size: 15px;
+    color: white;
+    font-family: 'Exo 2';
 }
 
 .coments_pel::placeholder{
