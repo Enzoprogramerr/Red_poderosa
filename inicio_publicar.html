@@ -16,22 +16,33 @@
         <nav>
             <ul class="nav_header">
                 <li><img src="imagenes/logo_img.jpeg" alt="logo de red social"></li>
+                <li>
+                    <div class="search_icon">
+                        <img src="imagenes/icon_search.png" alt="buscador de posteos">
+                        <input type="text" id="busqueda" placeholder="Encuentra tu pelicula">
+                    </div>
+                </li>
                 <li class="section"><a href="inicio_publicar.html?">Inicio</a></li>
                 <li class="section"><a href="peliculas.html">Peliculas</a></li>
                 <li class="section"><a href="perfil.html">Perfil</a></li>
                 <li><button onclick="location.href='index.html'">Cerrar sesion</button></li>
             </ul>
+            <div class="search_icon_mobile">
+                <img src="imagenes/icon_search.png" alt="buscador de posteos">
+                <input type="text" id="busqueda" placeholder="Encuentra tu pelicula">
+            </div>
+            <button class="button_icon" type="button">
+                <img src="imagenes/estrella-afilada-medio-trazo.png" alt="Icono califica" title="Califica peliculas">
+            </button>
+            <button class="button_icon" type="button">
+                <img src="imagenes/corazon-de-lista-de-deseos.png" alt="Icono agregar peliculas a mi lista" title="Guarda peliculas para ver">
+            </button>
+            
         </nav>
     </header>
     <main>
         <div class="contain">
             <aside>
-                <div class="search_icon">
-                    <img src="imagenes/icon_search.png" alt="buscador de posteos">
-                    <form class="search_form">
-                        <input type="text" placeholder="Buscar" name="search">
-                    </form>
-                </div>
                 <div class="redirection">
                     <p>¡Puedes calificar y recomendar peliculas!</p>
                 </div>
