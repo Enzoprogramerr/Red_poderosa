@@ -508,28 +508,65 @@ aside button:hover{
 
 
 .perfil_nombre{
-    /*width: 75rem;*/
     height: 5rem;
     margin-top: 1rem;
     background-color: rgb(15, 14, 14);
     display: flex;
     flex-direction: row;
-    align-content: center;
+    justify-content: space-between;
     gap: 1rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
 
-.perfil_nombre img{
-    /*width: 4rem;*/
+.group img{
     height: 4rem;
     border-radius: 50%;
     margin: 0.5rem;
 }
 
-.perfil_nombre h2{
+.perfil_nombre .name_perfil{
     margin-top: 1.5rem;
     color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.perfil_nombre a:hover{
+    color: #bdbdbd;
+}
+
+.perfil_nombre button{
+    margin-left: 1rem;
+    padding: 0.5rem;
+    height: 3rem;
+    margin-top: 1.3rem;
+    font-family: "Exo 2", sans-serif;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.perfil_nombre button:hover{
+    color: #bdbdbd;
+}
+
+.perfil_nombre .group{
+    display: flex;
+    flex-direction: row;
+}
+
+.perfil_nombre a{
+    margin-right: 0.5rem;
+}
+
+.perfil_nombre button img{
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 0;
+    margin: 0;
 }
 
 .deesc-text{
@@ -552,7 +589,6 @@ p {
 
 
 .description{
-    /*width: 75rem;*/
     height: auto;
     background-color: rgb(15, 14, 14);
     padding-bottom: 1rem ;
@@ -618,9 +654,9 @@ p {
 
 .perfil_nombre_users{
     width: 40rem;
-    height: 4rem;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-content: center;
     gap: 1rem;
 }
@@ -643,13 +679,63 @@ p {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    margin: 0.4rem 0.5rem;
+    margin: 0.8rem 0.5rem;
     opacity: 0.9;
 }
-.perfil_nombre_users h2{
-    margin-top: 1rem;
+.perfil_nombre_users a{
+    margin-top: 1.4rem;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.perfil_nombre_users a:hover{
+    color: #bdbdbd;
+}
+
+.perfil_nombre_users button{
+    margin-left: 0;
+    padding: 0;
+    height: 3rem;
+    margin-top: 0;
+    font-family: "Exo 2", sans-serif;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.perfil_nombre_users button:hover{
+    color: #bdbdbd;
+}
+
+.users-comments .perfil_nombre_users .group2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.group2 a{
+    margin: 0;
+}
+
+.group2 button{
+    padding: 0;
+    margin: 0 0 0 2rem;
+    font-family: "Exo 2", sans-serif;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.4rem;
+}
+
+
+button .image_report{
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: none;
 }
 
 .contain_peliculas{
