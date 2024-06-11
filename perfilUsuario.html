@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="shortcut icon" href="imagenes/Logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <title>Perfil</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav_header">
+                <li><img src="imagenes/logo_img.jpeg" alt="logo de red social"></li>
+                <li class="section"><a href="inicio_publicar.html?">Inicio</a></li>
+                <li class="section"><a href="peliculas.html">Peliculas</a></li>
+                <li class="section"><a href="perfil.html">Perfil</a></li>
+                <li><button onclick="location.href='index.html'">Cerrar sesion</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="perfil">
+            <section class="content_perfil">
+                <div class="foto_perfil">
+                    <img src="imagenes/foto_canet.png" alt="Foto-de-perfil"/>
+                </div>
+                <div class="follow">
+                    <button class="boton_follow" type="submit">seguir</button>
+                </div>  
+                <section class="data_profile">
+                    <h2>Carlos Murua</h2>
+                    <p>Correo Electrónico: usuario@gmail.com</p>
+                    <p>Fecha de Nacimiento: 01 de enero de 2000</p>
+                    <p>Ubicación: Ciudad, País</p>
+                    <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </section>
+                <section class="followers-contain">
+                    <h2>Seguidores</h2>
+                    <ul class="followers-list">
+                        <li class="follower-item" data-id="1">
+                            <a href="#" class="follower-link">
+                                <img src="avatar1.jpg" alt="Usuario 1" class="avatar">
+                                <span class="username">Usuario 1</span>
+                            </a>
+                        </li>
+                        <li class="follower-item" data-id="2">
+                            <a href="#" class="follower-link">
+                                <img src="avatar2.jpg" alt="Usuario 2" class="avatar">
+                                <span class="username">Usuario 2</span>
+                            </a>
+                        </li>
+                        <li class="follower-item" data-id="3">
+                            <a href="#" class="follower-link">
+                                <img src="avatar3.jpg" alt="Usuario 3" class="avatar">
+                                <span class="username">Usuario 3</span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <a href="pie-de-pagina.html">Quienes somos</a>
+        <a href="pie-de-pagina.html">Términos de uso</a>
+        <a href="pie-de-pagina.html">Terminos de uso</a>
+        <a href="pie-de-pagina.html">Politica y privacidad</a>
+    </footer>
+    
+</body>
+</html>
