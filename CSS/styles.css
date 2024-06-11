@@ -338,11 +338,8 @@ label:hover span{
     flex-direction:column;
     justify-content: center;
     background-color: rgb(15, 14, 14);
-    color: white;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    
 }
+
 
 .content_perfil{
     margin-bottom: auto;
@@ -353,22 +350,30 @@ label:hover span{
     border-radius: 30%;
     margin-left: 40%;
     margin-top: 2rem;
+    border: solid;
+    border-color: hsl(0, 91%, 18%);
 }
 
 .boton_foto{
     color: rgb(33, 33, 233);
-    margin-left: 38%;
+    background-color: #1e14aa;
+    margin-left: 40%;
     margin-top:1rem;
+    padding: 8px 10px;
     text-decoration: underline;
     font-family: "Exo 2", sans-serif;
     font-size: 1.5rem;
-    border:none;
+    border-radius:6px;
+    border: none;
     cursor: pointer;
     background: none;
     text-decoration: none;
 }
 .boton_foto:hover{
-    font-size: 1.6rem;
+    border:solid;
+    border-color: rgb(13, 0, 255);
+    border-radius: 0.7rem;
+    
 }
 
 #editarFotoPerfil{
@@ -401,7 +406,7 @@ label:hover span{
     border-radius: 0.7rem;
 }
 
-.data_perfil{
+.data_profile{
     margin-left: 5rem;
     line-height: 2rem;
     margin-bottom: 10rem;
@@ -415,11 +420,80 @@ label:hover span{
     padding: 1rem;
     display: none;
 }
+
 .edit_data form label, form input, form textarea{
     font-family: "Exo 2", sans-serif;
     font-size: 1.5rem;
 }
 
+@media screen and (max-width: 480px){
+    .perfil{
+        background-color: #f9f7f7;
+        width:auto;
+}
+    .foto_perfil img{
+        border-radius:30%;
+}
+    .boton_foto{
+        margin-left: 60px;
+
+    }
+    .data_profile p {
+        color: black
+    }
+    .data_profile h2{
+        color: black
+    }
+    .edit_data form{
+        width: 30rem;
+        margin-left: 8rem;
+        margin-bottom: 5rem;
+        color:antiquewhite;
+    }
+};
+
+
+/*PERFIL-USUARIO (HTML)-------------------------------------------------------------------------------------------------*/
+.follow{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+    margin-right: 10rem;
+}
+
+.boton_follow{
+    color: rgb(255, 0, 0);
+    border-radius: 6px;
+    padding:8px 10px;
+    background: none;
+    cursor: pointer;
+    border: none;
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.5rem;
+}
+
+.boton_follow:hover{
+    border:solid;
+    border-color: rgb(55, 0, 255);
+    border-radius: 0.7rem;
+}
+.followers-contain {
+    width: 400px;
+    height: 200px;
+    border: 1px solid #1e14aa;
+    overflow-y: auto; /* Para permitir el desplazamiento vertical */
+    margin: 50px;
+    padding: 10px;
+}
+.follower-item{
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+    
+}
 /*---------------------------------------------------------------------------------------------------
 AQUI DEBAJO INICIO/PUBLICAR*/
 
