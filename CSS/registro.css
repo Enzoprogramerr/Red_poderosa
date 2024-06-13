@@ -6,6 +6,7 @@ body {
     font-family: Arial, sans-serif;
     background-image: url('../imagenes/borde.png');
     background-position: top center; /* Para centrar la imagen */
+    background-size: cover;
 }
 .boton_inicio{
     margin-top: 2rem;
