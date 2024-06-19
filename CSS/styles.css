@@ -465,6 +465,7 @@ li h1{
     padding-top: 0.3rem;
     font-family: "Exo 2", sans-serif;
     color: white;
+    outline: none;
 }
 
 .search_icon input[type="text"]::placeholder{
@@ -478,6 +479,7 @@ li h1{
     width: 2rem;
     height: 2rem;
     margin-right: 0.3rem;
+    border-radius: 0;
 }
 
 
@@ -665,7 +667,6 @@ p {
 }
 
 .perfil_nombre_users{
-    width: 40rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -790,7 +791,7 @@ button .image_report{
     height: 5rem;
     margin-top: 1rem;
     display: flex;
-    align-content: center;
+    align-items: baseline;
 }
 
 
@@ -863,15 +864,24 @@ footer a{
     font-size: 1.1rem;
 }
 
-@media screen and (max-width: 430px) {
+.nav_header .mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
     html{
         font-size: 65%;
+        width: 100vw;
+    }
+
+    body{
+        width: 100%;
     }
 
     header{
         font-weight: 400;
         height: 30%;
-        width: 100vw;
+        width: 100%;
         background-image: none;
         background-color: #a87272;
         display: block;
@@ -1048,7 +1058,7 @@ footer a{
     }
 
     footer a{
-        padding-left: 1rem;
+        padding-left: 1rem ;
     }
 }
 
