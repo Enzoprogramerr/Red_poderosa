@@ -862,6 +862,7 @@ footer a{
     color: whitesmoke;
     font-size: 1.1rem;
 }
+
 @media screen and (max-width: 430px) {
     html{
         font-size: 65%;
@@ -898,6 +899,14 @@ footer a{
         justify-self: start;
     } 
 
+    li.mobile.two{
+        padding-left: 0;
+    }
+
+    li.mobile.two a{
+        font-size: 1.8rem;
+    }
+
     li.mobile.four{
         justify-self: start;
     } 
@@ -915,7 +924,7 @@ footer a{
         width: 80%;
     }
 
-    .three h2{
+    .three h3{
         margin: 0;
         font-family:"Exo 2", sans-serif;
     }
@@ -931,6 +940,10 @@ footer a{
     
     li.mobile.one img{
         object-fit: scale-down;
+    }
+
+    li.mobile.four{
+        padding: 0 0 0 0.8rem;
     }
 
     li.mobile.four img{
@@ -949,16 +962,39 @@ footer a{
         border-radius: 0;
     } 
     .five{
-        height: 40%;
+        height: 60%;
         width: 40%;
     }
 
     li.mobile.five img{
         object-fit: scale-down;
     }
+    .six{
+        height: 40%;
+        width: 40%;
+    }
+
+    li.mobile.six button,
+    li.mobile.six img{
+        width: 100%;
+        height: 100%;
+        background: none;
+        padding: 0;
+        border-radius: 0;
+    } 
+
+    li.mobile.six img{
+        object-fit: scale-down;
+        height: 2.8rem;
+    }
 
     .nav_header li:nth-child(n+7) {
         display: none;
+    }
+
+    li.mobile.five,
+    li.mobile.six{
+        padding: 0;
     }
       
     aside{
@@ -973,13 +1009,46 @@ footer a{
         width: 100vw;
     }
 
+    .description_users{
+        width: auto;
+    } 
+
     .comments{
         width: 100vw;
         margin-left: 0;
     }
 
     .comments form{
-        margin-bottom: 2rem;
+        display: flex;
+        margin: 2rem 0;
+        height: 3.5rem;
+        width: 98vw;
+        border: 2px solid red;
+        border-radius: 30px;
+        font-size: 1rem;
+    }
+
+    .comments form input[type="text"]{
+        border: none;
+        margin: 0;
+        outline: none;
+    }
+
+    footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        margin-top: 1rem;
+        background: #511111;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+    }
+
+    footer a{
+        padding-left: 1rem;
     }
 }
 
