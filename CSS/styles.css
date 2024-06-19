@@ -83,7 +83,7 @@ body{
 }
 
 header{
-    font-weight: 900;
+    font-weight: 700;
     height: 13rem;
     width: 100%;
     background-image: url(../imagenes/fondo_peli.jpg);
@@ -152,7 +152,7 @@ li button{
     font-family: "Exo 2", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     border-radius: 2rem;
     padding: 0.8rem;
     border: none;
@@ -177,6 +177,7 @@ main{
     flex-direction: row;
     margin-top: 1rem;
 }
+
 
 /* -------------------------------------------------------------------------------------------
 DEBAJO SECCION DE PELICULA*/
@@ -554,44 +555,57 @@ aside{
     align-items: center;
 }
 
+/*.nav_header li:nth-child(-n+6) {
+    display: none;
+}*/
+
+
+li h1{
+    display: none;
+}
+
+.search_icon_mobile{
+    display: none;
+}
+
+.button_icon{
+    display: none;
+}
+
 .search_icon{
     display: flex;
     margin: 2rem 0;
     justify-content: center;
-    background-color: rgb(15, 14, 14);
-    padding: 0.5rem;
-    border: 0.5rem red;
-    border-bottom-right-radius: 1rem;
-    border-top-right-radius: 1rem;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
+.search_icon input[type="text"]{
+    width:12.7rem;
+    background: none;
+    border: none;
+    padding-top: 0.3rem;
+    font-family: "Exo 2", sans-serif;
+    color: white;
+    outline: none;
+}
 
-.search_icon .search_form{
-    width: auto;
-    height: auto;
+.search_icon input[type="text"]::placeholder{
+    color: white;
+    justify-content: baseline;
+    font-family: "Exo 2", sans-serif;
+    border: none;
 }
 
 .search_icon img{
     width: 2rem;
     height: 2rem;
     margin-right: 0.3rem;
+    border-radius: 0;
 }
 
-.search_form input[type="text"]{
-    width: 9rem;
-    background: none;
-    border: none;
-    padding-top: 0.3rem;
-    padding-left: 3rem;
-    font-family: "Exo 2", sans-serif;
-    color:white
-}
 
-.search_form input[type="text"]::placeholder{
-    color: white;
-    justify-content: baseline;
-    font-family: "Exo 2", sans-serif;
-}
 
 .contain .redirection{
     max-width: 9rem;
@@ -776,7 +790,6 @@ p {
 }
 
 .perfil_nombre_users{
-    width: 40rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -901,7 +914,7 @@ button .image_report{
     height: 5rem;
     margin-top: 1rem;
     display: flex;
-    align-content: center;
+    align-items: baseline;
 }
 
 
@@ -921,8 +934,6 @@ button .image_report{
     margin-left: 4rem;
     margin-top: 0.8rem;
 }
-
-
 
 .title .form_categori label{
     font-size: 1.6rem;
@@ -974,6 +985,204 @@ footer {
 footer a{
     color: whitesmoke;
     font-size: 1.1rem;
+}
+
+.nav_header .mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    html{
+        font-size: 65%;
+        width: 100vw;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    header{
+        font-weight: 400;
+        height: 30%;
+        width: 100%;
+        background-image: none;
+        background-color: #a87272;
+        display: block;
+    }
+
+    .nav_header{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 1fr 2fr 1fr; 
+        margin: 0;
+    }
+
+    .mobile{
+        height: 40%;
+        width: 40%;
+        margin:0;
+        background: none;
+        padding: 0;
+    }
+
+    li.mobile.one{
+        justify-self: start;
+    } 
+
+    li.mobile.two{
+        padding-left: 0;
+    }
+
+    li.mobile.two a{
+        font-size: 1.8rem;
+    }
+
+    li.mobile.four{
+        justify-self: start;
+    } 
+
+    .two{
+        height: auto;
+        width: 80%;
+        padding: 0;
+        justify-self: start;
+
+    }
+
+    .three{
+        height: 80%;
+        width: 80%;
+    }
+
+    .three h3{
+        margin: 0;
+        font-family:"Exo 2", sans-serif;
+    }
+
+    li.mobile.one button,
+    li.mobile.one img{
+        width: 100%;
+        height: 100%;
+        background: none;
+        padding: 0;
+        border-radius: 0;
+    } 
+    
+    li.mobile.one img{
+        object-fit: scale-down;
+    }
+
+    li.mobile.four{
+        padding: 0 0 0 0.8rem;
+    }
+
+    li.mobile.four img{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        object-fit: scale-down;
+    }
+
+    li.mobile.five button,
+    li.mobile.five img{
+        width: 100%;
+        height: 100%;
+        background: none;
+        padding: 0;
+        border-radius: 0;
+    } 
+    .five{
+        height: 60%;
+        width: 40%;
+    }
+
+    li.mobile.five img{
+        object-fit: scale-down;
+    }
+    .six{
+        height: 40%;
+        width: 40%;
+    }
+
+    li.mobile.six button,
+    li.mobile.six img{
+        width: 100%;
+        height: 100%;
+        background: none;
+        padding: 0;
+        border-radius: 0;
+    } 
+
+    li.mobile.six img{
+        object-fit: scale-down;
+        height: 2.8rem;
+    }
+
+    .nav_header li:nth-child(n+7) {
+        display: none;
+    }
+
+    li.mobile.five,
+    li.mobile.six{
+        padding: 0;
+    }
+      
+    aside{
+        display: none;
+    }
+
+    .section{
+        font-size: 1rem;
+    }
+
+    section{
+        width: 100vw;
+    }
+
+    .description_users{
+        width: auto;
+    } 
+
+    .comments{
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    .comments form{
+        display: flex;
+        margin: 2rem 0;
+        height: 3.5rem;
+        width: 98vw;
+        border: 2px solid red;
+        border-radius: 30px;
+        font-size: 1rem;
+    }
+
+    .comments form input[type="text"]{
+        border: none;
+        margin: 0;
+        outline: none;
+    }
+
+    footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        margin-top: 1rem;
+        background: #511111;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+    }
+
+    footer a{
+        padding-left: 1rem ;
+    }
 }
 
 /*---------------------------------------------------------------------------------------------------
