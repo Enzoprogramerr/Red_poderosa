@@ -1001,12 +1001,16 @@ footer a{
         width: 100%;
     }
 
+    .nav_header .mobile{
+        display: flex;
+    }
+
     header{
         font-weight: 400;
         height: 30%;
         width: 100%;
         background-image: none;
-        background-color: #a87272;
+        background-color: #7D0707;
         display: block;
     }
 
@@ -1060,6 +1064,7 @@ footer a{
     .three h3{
         margin: 0;
         font-family:"Exo 2", sans-serif;
+        height: min-content;
     }
 
     li.mobile.one button,
@@ -1125,6 +1130,7 @@ footer a{
         display: none;
     }
 
+
     li.mobile.five,
     li.mobile.six{
         padding: 0;
@@ -1165,6 +1171,49 @@ footer a{
         border: none;
         margin: 0;
         outline: none;
+    }
+
+/*DEBAJO PARA PELICULAS ----------------------------------------------------------------*/
+
+    .title {
+        margin: 1rem 0 2rem 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .title h2 {
+        display: inline-block;
+        color: white;
+    }
+
+    .best_movie {
+        display: flex;
+        width: 100%;
+        height: 20rem;
+        margin: 1rem 0;
+    }
+
+    .nav_header.mobile.four p{
+        width: 70%;
+    }
+
+    li.mobile.search {
+        width: auto;
+        align-self: start;
+        justify-self: start;
+    }
+
+    li.mobile.search button,
+    li.mobile.search img{
+        width: 100%;
+        height: 100%;
+        background: none;
+        padding: 0;
+        border-radius: 0;
+    } 
+
+    li.mobile.search img{
+        object-fit: scale-down;
     }
 
     footer{
