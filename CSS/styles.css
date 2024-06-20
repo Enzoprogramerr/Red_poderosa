@@ -428,9 +428,11 @@ label:hover span{
 }
 
 @media screen and (max-width: 480px){
+
     .content_perfil {
         background-color: #f9f7f7;
-        width:auto;
+        width:100%;
+        height: auto;
 }
     .foto_perfil img{
         border-radius:30%;
@@ -455,8 +457,8 @@ label:hover span{
 
 
 /*PERFIL-USUARIO (HTML)-------------------------------------------------------------------------------------------------*/
-.profileUser{     
-   background-color: #000505;
+.body_profileUser{
+    background-color: #000606;
 }
 
 .content_profile{
@@ -510,13 +512,25 @@ label:hover span{
 }
 
 @media screen and (max-width: 480px){
+    .body_profileUser {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
     .content_profile{
-        background-color: #f9f7f7;
-        width:100%;
+        width: 100vw;
+        height: auto;
+        background-color:white;
+        
     } 
 
     .boton_follow{
-        margin-left: 40rem;
+        margin-left: 38rem;
         color:black;
         background-color: hsl(0, 59%, 46%);
     }
@@ -537,6 +551,11 @@ label:hover span{
     }
     .follower-item a{
         color: black
+    }
+    .footer_perfil{
+        margin-bottom: 3rem;
+        width: 100vw;
+        
     }
 };
 
