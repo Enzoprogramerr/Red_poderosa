@@ -701,6 +701,8 @@ aside button:hover{
     background-color: black;
     justify-self: center;
     justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
     
 }
 
@@ -943,6 +945,10 @@ button .image_report{
     margin-top: 1rem;
 }
 
+aside {
+    width: 11rem;
+}
+
 
 .navegation_peliculas{
     width: 80rem;
@@ -952,7 +958,8 @@ button .image_report{
     background-color: rgb(15, 14, 14);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    margin-top: 1rem;
+    margin-top: 1rem 10%;
+    align-items: center;
 }
 
 .contain_peliculas .redirection{
@@ -1014,7 +1021,7 @@ button .image_report{
     display: flex;
     width: 100vh;
     height: 20rem;
-    margin: 1rem 0 1rem 7rem;
+    margin: 1rem 5rem 1rem 5rem;
 }
 
 .best_movie img{
@@ -1028,6 +1035,8 @@ button .image_report{
     width: 10rem;
     opacity: 1;
     filter: contrast(120%);
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 footer {
@@ -1232,6 +1241,11 @@ footer a{
         border: none;
         margin: 0;
         outline: none;
+    }
+
+    .contain .navegations{
+        margin-left: 0;
+        margin-right: 0;
     }
 
 /*DEBAJO PARA PELICULAS ----------------------------------------------------------------*/
