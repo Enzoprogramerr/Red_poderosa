@@ -430,22 +430,21 @@ label:hover span{
     margin-right: 2rem;
 }
 
-.boton_perfil{
-    background-color: rgba(255, 0, 0, 0.774);
+.btn-custom{
     color: red;
     border-radius: 6px;
     padding:8px 10px;
     background: none;
-    cursor: pointer;
     border: none;
     font-family: "Exo 2", sans-serif;
     font-size: 1.5rem;
 }
 
-.boton_perfil:hover{
+.btn-custom:hover{
     border:solid;
     border-color: red;
     border-radius: 0.7rem;
+    color: #e60606;
 }
 
 .data_profile{
@@ -454,19 +453,25 @@ label:hover span{
     box-sizing: border-box;
 }
 
-.edit_data form{
+.modal-content {
     background-color: #7D0707;
     color: #f9f7f7;
-    width: 50rem;
+    width: 60rem;
     margin-left: 10rem;
     padding: 1rem;
     display: grid;
     margin-bottom: 5rem;
+    border-radius:20px ;
 }
 
-.edit_data form label, form input, form textarea{
+#editProfileForm label{
     font-family: "Exo 2", sans-serif;
     font-size: 1.5rem;
+}
+#editProfileForm input{
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.5rem;
+
 }
 
 @media screen and (max-width: 480px){
