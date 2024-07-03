@@ -407,10 +407,9 @@ label:hover span{
 }
 
 .data_profile{
-    margin-left: 5rem;
     line-height: 2rem;
-    margin-bottom: 10rem;
-    margin-top: 2rem;
+    padding: 2rem 5rem 10rem 5rem;
+    box-sizing: border-box;
 }
 
 .edit_data form{
@@ -554,8 +553,8 @@ label:hover span{
         color: black
     }
     .footer_perfil{
-        margin-bottom: 3rem;
-        width: 100vw;
+        
+        
         
     }
 };
