@@ -136,9 +136,6 @@ a:hover{
     color:white;
 }
 
-li:nth-child(1){
-    flex-grow: 0.2;
-}
 
 li button{
     padding-right: 1rem;
@@ -461,6 +458,29 @@ label:hover span{
 /* -------------------------------------------------------------------------------------------*/
 
 /* perfil.html*/
+
+.nav_header_perfil .titulo {
+    display: none;
+}
+
+.nav_header_perfil{
+    max-width: 100%;
+    display: flex;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 0rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav_header_perfil li{
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem;
+}
+
 .perfil{     
     background-color: #000606;
 }
@@ -565,6 +585,63 @@ label:hover span{
 @media screen and (max-width: 480px){
     .perfil{
         background-color: #f9f7f7;}
+
+    .nav_header_perfil .imagen_logo{
+        display: none;
+    }
+
+    .nav_header_perfil .titulo{
+        display: flex;
+    }
+
+    .nav_header_perfil {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav_header_perfil li{
+        text-decoration: none;
+        list-style-type: none;
+        height: 4rem;
+    
+    }
+
+    .nav_header_perfil li a{
+        background-color: #7D0707;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .nav_header_perfil .section {
+        background-color: #7D0707 ;
+        font-size: 1.4rem;
+        height: 4rem;
+    }
+
+    .nav_header_perfil .section a{
+        font-weight: 400;
+        display: inline-block;
+        width: 6.5rem;
+    }
+
+    .nav_header_perfil li button{
+        font-family: "Exo 2", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: 300;
+        border-radius: 2rem;
+        padding: 0.8rem;
+        border: none;
+        background-color: #7D0707 ;
+        color: white;
+        font-size: 1.3rem;
+    }
 
     .content_perfil {
         background-color: #f9f7f7;
@@ -728,7 +805,7 @@ li h1{
 }
 
 .search_icon input[type="text"]{
-    width:12.7rem;
+    width:7.7rem;
     background: none;
     border: none;
     padding-top: 0.3rem;
@@ -1021,6 +1098,8 @@ button .image_report{
     width: 1.7rem;
     border-radius: none;
 }
+/*---------------------------------------------------------------------------------------------------
+DEJABO SECCION PELICULAS */
 
 .contain_peliculas{
     max-width: 100%;
@@ -1043,8 +1122,9 @@ aside {
     background-color: rgb(15, 14, 14);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    margin-top: 1rem 10%;
     align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .contain_peliculas .redirection{
@@ -1109,15 +1189,19 @@ aside {
     margin: 1rem 5rem 1rem 5rem;
 }
 
-.best_movie img{
-    width: 0;
+.best_movie a{
     flex-grow: 1;
+}
+
+.best_movie a img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-.best_movie img:hover{
+.best_movie a img:hover{
     cursor: pointer;
-    width: 10rem;
+    width: 12rem;
     opacity: 1;
     filter: contrast(120%);
     margin-left: 10%;
