@@ -386,6 +386,7 @@ label:hover span{
     width: 80rem;
     background-color: hwb(0 10% 88%);
 }
+
 .foto_perfil img{
     width: 10rem;
     height: 10rem;
@@ -475,11 +476,12 @@ label:hover span{
 }
 
 @media screen and (max-width: 480px){
+    .perfil{
+        background-color: #f9f7f7;}
 
     .content_perfil {
         background-color: #f9f7f7;
         width:100%;
-        height: auto;
 }
     .foto_perfil img{
         border-radius:30%;
@@ -560,6 +562,7 @@ label:hover span{
 
 @media screen and (max-width: 480px){
     .body_profileUser {
+        background-color: #f9f7f7;
         margin: 0;
         padding: 0;
         display: flex;
@@ -1346,4 +1349,22 @@ li{
 
 .sec_footer{
     margin-left: 1rem;
+}
+
+@media screen and (max-width: 480px){
+    .navegations_footer{
+        width: 100%;
+        background-color: #000606;
+    }
+    .sec_footer{
+        width: 90%;
+        margin: auto;
+    }
+    section{
+        width: 100%;
+    }
+    article p{
+        width: 100%;
+    }
+
 }
