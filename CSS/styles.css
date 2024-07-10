@@ -857,6 +857,39 @@ aside button:hover{
     border-radius: 0.7rem;
 }
 
+.navegations section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navegations section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.navegations section form textarea{
+    background-color: rgb(15, 14, 14);
+    color: white;
+}
+
+.navegations section form [type="submit"]:hover{
+    border:solid;
+    border-color: red;
+    border-radius: 0.7rem;
+}
+
+.navegations section form input[type="submit"]{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: red;
+    padding: 0.5rem;
+}
+
 .contain .navegations{
     width: 80rem;
     height: 100%;
