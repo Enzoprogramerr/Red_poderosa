@@ -1443,6 +1443,10 @@ footer a{
         width: 100%;
     }
 
+    .navegation_peliculas{
+        margin: 0;
+    }
+
     .comments form input[type="text"]{
         margin: 0;
         outline: none;
