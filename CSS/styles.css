@@ -188,10 +188,6 @@ main{
     padding: 0;
     }
 
-    main{
-        margin-bottom: 0;
-    }
-
     .content_index {
         display: flex;
         justify-content: center;
@@ -866,6 +862,7 @@ aside button:hover{
 .navegations section form {
     display: flex;
     flex-direction: column;
+    height: auto;
 }
 
 .navegations section form textarea{
@@ -1008,7 +1005,6 @@ p {
     margin: 1rem ;
     padding-left: 2rem;
     color: white;
-    border-color: red;
 }
 
 .comments form input[type="text"]::placeholder{
@@ -1354,9 +1350,15 @@ footer a{
 
     li.mobile.four{
         padding: 0 0 0 0.8rem;
+        height: 60%;
+        width: 40%;
     }
 
-    li.mobile.four img{
+    li.mobile.four button {
+        background: none;
+    }
+
+    li.mobile.four button img{
         width: 100%;
         height: 100%;
         padding: 0;
@@ -1371,6 +1373,7 @@ footer a{
         padding: 0;
         border-radius: 0;
     } 
+
     .five{
         height: 60%;
         width: 40%;
@@ -1439,15 +1442,28 @@ footer a{
         font-size: 1rem;
     }
 
+    .navegations{
+        width: 100%;
+    }
+
     .comments form input[type="text"]{
-        border: none;
         margin: 0;
         outline: none;
+        width: 94%;
     }
 
     .contain .navegations{
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .navegations section form{
+        width: 100%;
+        border: none;
+    }
+
+    .publications{
+        margin-top: 1rem;
     }
 
 /*DEBAJO PARA PELICULAS ----------------------------------------------------------------*/
