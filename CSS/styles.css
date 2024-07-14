@@ -84,6 +84,7 @@ body{
     padding: 0;
     min-height: 100vh;
     background-color:black;
+    position: relative;
 }
 
 header{
@@ -168,7 +169,6 @@ li button:hover{
 
 main{
     height: 100%;
-    margin-bottom: 5rem;
 }
 
 .contain{
@@ -763,13 +763,26 @@ label:hover span{
         color: black
     }
 
-};
-
-
-    
+}
 
 /*---------------------------------------------------------------------------------------------------
 AQUI DEBAJO INICIO/PUBLICAR*/
+
+.nav_header .desktop {
+    border-color: black;
+    border-radius: 1.5rem;
+    background-color: black;
+    font-size: 1.8rem;
+}
+
+.desktop:hover{
+    transform: scale(1.1);
+    background-color: rgb(230, 4, 4);
+}
+
+.nav_header .one{
+    background: none;
+}
 
 aside{
     width: 18%;
@@ -823,8 +836,6 @@ li h1{
     margin-right: 0.3rem;
     border-radius: 0;
 }
-
-
 
 .contain .redirection{
     max-width: 9rem;
@@ -884,7 +895,7 @@ aside button:hover{
     background: none;
     border: none;
     color: red;
-    padding: 0.5rem;
+    padding: 1.5rem 0.5rem;
 }
 
 .contain .navegations{
@@ -897,8 +908,6 @@ aside button:hover{
     margin-right: 10%;
     
 }
-
-
 .perfil_nombre{
     height: 5rem;
     margin-top: 1rem;
@@ -977,16 +986,12 @@ p {
     margin: 0;
     color: whitesmoke;
 }
-
-
-
 .description{
     height: auto;
     background-color: rgb(15, 14, 14);
     padding-bottom: 1rem ;
     border-bottom: 0.1rem solid white;
 }
-
 
 .comments{
     width: 40rem;
@@ -1127,8 +1132,196 @@ button .image_report{
     width: 1.7rem;
     border-radius: none;
 }
+
+@media only screen and (max-width: 480px){
+    body{
+        width: 100%;
+    }
+
+    .nav_header .mobile{
+        display: flex;
+    }
+
+    .nav_header .desktop{
+        display: none;
+    }
+    .nav_header .li_search{
+        display: none;
+    }
+
+    .mobile{
+        height: 40%;
+        width: 40%;
+        margin:0;
+        background: none;
+        padding: 0;
+    }
+
+    li.mobile.one{
+        justify-self: start;
+    } 
+
+    li.mobile.two{
+        padding-left: 0;
+    }
+
+    li.mobile.two a{
+        font-size: 1.8rem;
+    }
+
+    li.mobile.four{
+        justify-self: start;
+    } 
+
+    .three{
+        height: 80%;
+        width: 80%;
+    }
+
+    .three h3{
+        margin: 0;
+        font-family:"Exo 2", sans-serif;
+        height: min-content;
+    }
+
+    li.mobile.one button,
+    li.mobile.one img{
+        width: 100%;
+        height: 100%;
+        background: none;
+        padding: 0;
+        border-radius: 0;
+    } 
+    
+    li.mobile.one img{
+        object-fit: scale-down;
+    }
+
+    li.mobile.four{
+        padding: 0 0 0 0.8rem;
+        height: 60%;
+        width: 40%;
+    }
+
+    li.mobile.four button {
+        background: none;
+    }
+
+    li.mobile.four button img{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        object-fit: scale-down;
+    }
+
+    li.mobile.five button,
+    li.mobile.five img{
+        width: 100%;
+        height: 100%;
+        background: none;
+        padding: 0;
+        border-radius: 0;
+    } 
+
+    .mobile .five{
+        height: 60%;
+        width: 40%;
+        background: none;
+    }
+
+    .nav_header li button {
+        background: none;
+    }
+
+    li.mobile.five img{
+        object-fit: scale-down;
+    }
+    .six{
+        height: 40%;
+        width: 40%;
+    }
+
+    li.mobile.six button,
+    li.mobile.six img{
+        width: 100%;
+        height: 100%;
+        background: none;
+        padding: 0;
+        border-radius: 0;
+    } 
+
+    li.mobile.six img{
+        object-fit: scale-down;
+        height: 2.8rem;
+    }
+
+    li.mobile.five,
+    li.mobile.six{
+        padding: 0;
+    }
+      
+    aside{
+        display: none;
+    }
+
+    .description_users{
+        width: auto;
+    } 
+
+    .comments{
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    .comments form{
+        display: flex;
+        margin: 2rem 0;
+        height: 3.5rem;
+        width: 98vw;
+        border: 2px solid red;
+        border-radius: 30px;
+        font-size: 1rem;
+    }
+
+    .navegations{
+        width: 100%;
+    }
+
+    .navegation_peliculas{
+        margin: 0;
+    }
+
+    .comments form input[type="text"]{
+        margin: 0;
+        outline: none;
+        width: 94%;
+    }
+
+    .navegations section form{
+        width: 100%;
+        border: none;
+    }
+
+    .publications{
+        margin-top: 1rem;
+    }
+
+}
+
 /*---------------------------------------------------------------------------------------------------
 DEJABO SECCION PELICULAS */
+
+.nav_header .section.one{
+    background: none;
+}
+
+.nav_header .section.one:hover{
+    transform: none;
+}
+
+.nav_header .section.two{
+    background: none;
+}
 
 .contain_peliculas{
     max-width: 100%;
@@ -1136,6 +1329,7 @@ DEJABO SECCION PELICULAS */
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
+    justify-content: center;
 }
 
 aside {
@@ -1168,7 +1362,6 @@ aside {
 .section_movie{
     border-bottom: 0.1rem solid;
     border-color: white;
-    border-bottom-right-radius: 1rem;
 }
 
 .title{
@@ -1237,19 +1430,6 @@ aside {
     margin-right: 10%;
 }
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 3.5rem;
-    width: 100%;
-    margin-top: 1rem;
-    background: #511111;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
 footer a{
     color: whitesmoke;
     font-size: 1.1rem;
@@ -1274,7 +1454,6 @@ footer a{
     }
 
     header{
-        font-weight: 400;
         height: 30%;
         width: 100%;
         background-image: none;
@@ -1290,6 +1469,10 @@ footer a{
         grid-template-rows: 50% 50%;
         grid-template-columns: 1fr 2fr 1fr; 
         margin: 0;
+    }
+
+    .nav_header .section{
+        display: none;
     }
 
     .mobile{
@@ -1374,9 +1557,14 @@ footer a{
         border-radius: 0;
     } 
 
-    .five{
+    .mobile .five{
         height: 60%;
         width: 40%;
+        background: none;
+    }
+
+    .nav_header li button {
+        background: none;
     }
 
     li.mobile.five img{
@@ -1401,7 +1589,8 @@ footer a{
         height: 2.8rem;
     }
 
-    .nav_header li:nth-child(n+7) {
+    .nav_header .section .one,
+    .two, .three, .four{
         display: none;
     }
 
@@ -1416,20 +1605,22 @@ footer a{
     }
 
     .section{
-        font-size: 1rem;
+        font-size: 1.5rem;
+        background: none;
+    }
+
+    .section.five{
+        display: flex;
+        margin: 0;
+    }
+
+    .nav_header li{
+        display: flex;
+        margin: 0;
     }
 
     section{
         width: 100vw;
-    }
-
-    .description_users{
-        width: auto;
-    } 
-
-    .comments{
-        width: 100vw;
-        margin-left: 0;
     }
 
     .comments form{
@@ -1446,27 +1637,14 @@ footer a{
         width: 100%;
     }
 
-    .comments form input[type="text"]{
+    .navegation_peliculas{
         margin: 0;
-        outline: none;
-        width: 94%;
     }
 
     .contain .navegations{
         margin-left: 0;
         margin-right: 0;
     }
-
-    .navegations section form{
-        width: 100%;
-        border: none;
-    }
-
-    .publications{
-        margin-top: 1rem;
-    }
-
-/*DEBAJO PARA PELICULAS ----------------------------------------------------------------*/
 
     .title {
         margin: 1rem 0 2rem 0;
@@ -1484,6 +1662,16 @@ footer a{
         width: 100%;
         height: 20rem;
         margin: 1rem 0;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .best_movie a{
+        flex-grow: 0;
+    }
+
+    .best_movie a img {
+        display: inline-block;
     }
 
     .nav_header.mobile.four p{
@@ -1566,21 +1754,19 @@ li{
     margin-left: 1rem;
 }
 
-@media screen and (max-width: 480px){
-    .navegations_footer{
-        width: 100%;
-        background-color: #000606;
-    }
-    .sec_footer{
-        width: 90%;
-        margin: auto;
-    }
-    section{
-        width: 100%;
-    }
-    article p{
-        width: 100%;
-        padding-bottom: 2rem;
-    }
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1rem;
+    background: #511111;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
 
+footer a{
+    padding-left: 1rem ;
 }
