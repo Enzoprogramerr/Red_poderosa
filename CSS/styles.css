@@ -312,50 +312,26 @@ DEBAJO SECCION DE PELICULA*/
     justify-content: center;
 }
 
-.critique-form h2{
-    margin-top: 1%;
-    color: white;
-    text-align: center;
-    font-size: 17px;
-}
-
-.critique-form { 
-    margin-left: 35%;
-    margin: auto;
-    margin-top: 40px;
-    background-color: none;
-    padding: 30px;
-    justify-content: center;
+.rating_section { 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    margin: 40px auto;
+    padding: 30px;
+    width: fit-content;
+    background-color: transparent;
 }
 
-.coments_pel{
-    width: 80%;
-    background: none;
-    padding: 9px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    border: 2px solid red;
-    font-size: 15px;
-    color: white;
-    font-family: 'Exo 2';
-}
-
-.coments_pel::placeholder{
-    color: white;
-}
-
-.critique-form .button_pel{
-    width: 31.5%;
+.rating_section .button_pel{
+    width: 100%;
     background: none;
     border: none;
     padding: 7px;
     color: red;
     font-size: 15px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .button_pel:hover {
@@ -522,10 +498,6 @@ label:hover span{
     
 }
 
-#editarFotoPerfil{
-    display:none;
-    margin-left:12rem ;
-}
 
 .edit_perfil{
     display: flex;
