@@ -30,19 +30,36 @@
         <section class="content_perfil">
             <div class="foto_perfil">
                 <img src="imagenes/foto_persona1.png" alt="Foto-de-perfil"/>
-                <button class="boton_foto">Editar Foto</button>
-                <form id="editarFotoPerfil" action="#" method="post">
-                    <label for="fotoPerfilInput">Seleccionar foto de perfil:</label>
-                    <input type="file" id="fotoPerfilInput">
-                    <button type="submit">Guardar foto de perfil</button>
-                </form>
+                <button class="boton_foto" data-bs-toggle="modal" data-bs-target="#fotoModal">Editar Foto</button>
+                <!-- Modal para editar foto -->
+                <div class="modal fade" id="fotoModal" tabindex="-1" aria-labelledby="fotoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="fotoModalLabel">Editar Foto de Perfil</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="editarFotoPerfil" action="#" method="post" enctype="multipart/form-data">
+                                    <div class="mb-3">
+                                        <input type="file" class="form-control" id="fotoPerfilInput" accept="image/*">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="submit" form="editarFotoPerfil" class="btn btn-primary">Guardar Foto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="edit_perfil">
                 <button type="button" class="btn btn-custom" data-bs-toggle="modal" 
                 data-bs-target="#exampleModal">Editar Perfil
                 </button>
                   
-                  <!-- Modal -->
+                  <!-- Modal para editar perfil -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
@@ -88,7 +105,7 @@
                 <p>Correo Electrónico: usuario@gmail.com</p>
                 <p>Fecha de Nacimiento: 01 de enero de 2000</p>
                 <p>Ubicación: Ciudad, País</p>
-                <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vel? Eligendi architecto aperiam, facere amet explicabo esse blanditiis similique nemo odio exercitationem qui animi itaque beatae nostrum nam ut. Iusto?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsum illo velit corporis porro ex tenetur placeat natus fuga ipsam labore, illum omnis dolore facilis voluptatibus eos, dolores assumenda maxime?Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vel? Eligendi architecto aperiam, facere amet explicabo esse blanditiis similique nemo odio exercitationem qui animi itaque beatae nostrum nam ut. Iusto?</p>
             </section>
         </section>
     </main>
