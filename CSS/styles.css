@@ -1200,6 +1200,7 @@ button .image_report{
         background: #181818;
         transition: all .5s;
         text-align: start;
+        z-index: 1000;
     }
     
     .nav-menu li{
