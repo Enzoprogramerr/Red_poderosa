@@ -1691,6 +1691,8 @@ footer a{
 AQUI DEBAJO EMPIEZA FOOTER*/
 
 .navegations_footer{
+    display: flex;
+    flex-direction: column;
     width: 70%;
     height: 100%;
     margin: auto;
@@ -1741,4 +1743,19 @@ footer{
 
 footer a{
     padding-left: 1rem ;
+}
+@media only screen and (max-width: 480px){
+    .contain_pieDePagina{
+        width: 100%;
+    }
+    .navegations_footer{
+        width: 95%;
+    }
+    .sec_footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
 }
