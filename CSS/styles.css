@@ -565,6 +565,56 @@ label:hover span{
 }
 
 @media screen and (max-width: 480px){
+
+    .nav-menu{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+        font-family: "Exo 2", sans-serif;
+        position: fixed;
+        height: 0vh;
+        width: 17rem;
+        background: #181818;
+        transition: all .5s;
+        text-align: start;
+    }
+    
+    .nav-menu li{
+        display: none;
+        line-height: 3rem;
+        transition: all .5s;
+    }
+    
+    .nav-menu li a{
+        color: white;
+        font-weight: 600;
+        background: none;
+    }
+    
+    .nav-menu li a.active{
+        color: #e60606;
+    }
+    
+    #check{
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #check:checked ~ .nav-menu{
+        height: 100vh;
+    }
+    
+    #check:checked ~ .nav-menu li {
+        display: block;
+    }
+    
+    .nav-menu li{
+        height: auto;
+    }
+
     .perfil{
         background-color: #f9f7f7;}
 
@@ -590,14 +640,16 @@ label:hover span{
     .nav_header_perfil li{
         text-decoration: none;
         list-style-type: none;
-        height: 4rem;
-    
     }
 
     .nav_header_perfil li a{
         background-color: #7D0707;
         font-size: 1.8rem;
         font-weight: 600;
+    }
+
+    .nav-menu li a {
+        background: none;
     }
 
     .nav_header_perfil .section {
@@ -1133,6 +1185,56 @@ button .image_report{
 }
 
 @media only screen and (max-width: 480px){
+
+    .nav-menu{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+        font-family: "Exo 2", sans-serif;
+        position: fixed;
+        height: 0vh;
+        width: 17rem;
+        background: #181818;
+        transition: all .5s;
+        text-align: start;
+    }
+    
+    .nav-menu li{
+        display: none;
+        line-height: 3rem;
+        transition: all .5s;
+    }
+    
+    .nav-menu li a{
+        color: white;
+        font-weight: 600;
+        background: none;
+    }
+    
+    .nav-menu li a.active{
+        color: #e60606;
+    }
+    
+    #check{
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #check:checked ~ .nav-menu{
+        height: 100vh;
+    }
+    
+    #check:checked ~ .nav-menu li {
+        display: block;
+    }
+    
+    .nav-menu li{
+        height: auto;
+    }
+
     body{
         width: 100%;
     }
@@ -1627,7 +1729,6 @@ footer a{
 
 
     .nav_header li{
-        display: flex;
         margin: 0;
     }
 
