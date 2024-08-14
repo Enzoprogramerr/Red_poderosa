@@ -425,13 +425,27 @@ label:hover span{
         width: 95%;
         padding-left: 1rem;
     }
-    
+
+    li.mobile.onee{
+        justify-self: start;
+        height: 100%;
+        margin: 0 0.5rem;
+        padding: 0;
+    } 
+
+    li.mobile.onee button,
+    li.mobile.onee img{
+        background: none;
+        padding: 0;
+        border-radius: 0;
+        object-fit: scale-down;
+    } 
 }
 /* -------------------------------------------------------------------------------------------*/
 
 /* perfil.html*/
 
-.nav_header_perfil .titulo {
+.nav_header_perfil .mobile{
     display: none;
 }
 
@@ -563,6 +577,56 @@ label:hover span{
 }
 
 @media screen and (max-width: 480px){
+
+    .nav-menu{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+        font-family: "Exo 2", sans-serif;
+        position: fixed;
+        height: 0vh;
+        width: 17rem;
+        background: #181818;
+        transition: all .5s;
+        text-align: start;
+    }
+    
+    .nav-menu li{
+        display: none;
+        line-height: 3rem;
+        transition: all .5s;
+    }
+    
+    .nav-menu li a{
+        color: white;
+        font-weight: 600;
+        background: none;
+    }
+    
+    .nav-menu li a.active{
+        color: #e60606;
+    }
+    
+    #check{
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #check:checked ~ .nav-menu{
+        height: 100vh;
+    }
+    
+    #check:checked ~ .nav-menu li {
+        display: block;
+    }
+    
+    .nav-menu li{
+        height: auto;
+    }
+
     .perfil{
         background-color: #f9f7f7;}
 
@@ -588,14 +652,16 @@ label:hover span{
     .nav_header_perfil li{
         text-decoration: none;
         list-style-type: none;
-        height: 4rem;
-    
     }
 
     .nav_header_perfil li a{
         background-color: #7D0707;
         font-size: 1.8rem;
         font-weight: 600;
+    }
+
+    .nav-menu li a {
+        background: none;
     }
 
     .nav_header_perfil .section {
@@ -661,6 +727,19 @@ label:hover span{
     .follower-item a{
         color: black
     }
+
+    .nav_header_perfil .section{
+        display: none
+    }
+
+    .nav_header_perfil .mobile{
+        display: flex
+    }
+
+    .nav_header_perfil .three{
+        width: 0;
+    }
+
 };
 
 
@@ -1107,6 +1186,56 @@ button .image_report{
 }
 
 @media only screen and (max-width: 480px){
+
+    .nav-menu{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+        font-family: "Exo 2", sans-serif;
+        position: fixed;
+        height: 0vh;
+        width: 17rem;
+        background: #181818;
+        transition: all .5s;
+        text-align: start;
+    }
+    
+    .nav-menu li{
+        display: none;
+        line-height: 3rem;
+        transition: all .5s;
+    }
+    
+    .nav-menu li a{
+        color: white;
+        font-weight: 600;
+        background: none;
+    }
+    
+    .nav-menu li a.active{
+        color: #e60606;
+    }
+    
+    #check{
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #check:checked ~ .nav-menu{
+        height: 100vh;
+    }
+    
+    #check:checked ~ .nav-menu li {
+        display: block;
+    }
+    
+    .nav-menu li{
+        height: auto;
+    }
+
     body{
         width: 100%;
     }
@@ -1458,18 +1587,24 @@ footer a{
 
     li.mobile.one{
         justify-self: start;
+        height: 80%;
+        margin: 0 0.5rem;
+        padding: 0;
     } 
 
-    li.mobile.two{
-        padding-left: 0;
+    li.mobile.twoo{
+        justify-self: center;
+        padding-top: 2rem;
+        width: 100%;
+        height: auto;
     }
 
-    li.mobile.two a{
+    li.mobile.twoo a{
         font-size: 1.8rem;
     }
 
     li.mobile.four{
-        justify-self: start;
+        justify-self: center;
     } 
 
     .two{
@@ -1506,7 +1641,7 @@ footer a{
 
     li.mobile.four{
         padding: 0 0 0 0.8rem;
-        height: 60%;
+        height: 100%;
         width: 40%;
     }
 
@@ -1568,9 +1703,11 @@ footer a{
     }
 
 
-    li.mobile.five,
-    li.mobile.six{
-        padding: 0;
+    li.mobile.five{
+        padding: 0 1rem;
+        height: 100%;
+        width: 40%;
+        justify-self: start;
     }
       
     aside{
@@ -1583,12 +1720,16 @@ footer a{
     }
 
     .section.five{
-        display: flex;
+        display: none;
         margin: 0;
     }
 
+    .section.six{
+        display: none;
+    }
+
+
     .nav_header li{
-        display: flex;
         margin: 0;
     }
 
