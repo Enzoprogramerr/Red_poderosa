@@ -449,13 +449,27 @@ label:hover span{
         width: 95%;
         padding-left: 1rem;
     }
-    
+
+    li.mobile.onee{
+        justify-self: start;
+        height: 100%;
+        margin: 0 0.5rem;
+        padding: 0;
+    } 
+
+    li.mobile.onee button,
+    li.mobile.onee img{
+        background: none;
+        padding: 0;
+        border-radius: 0;
+        object-fit: scale-down;
+    } 
 }
 /* -------------------------------------------------------------------------------------------*/
 
 /* perfil.html*/
 
-.nav_header_perfil .titulo {
+.nav_header_perfil .mobile{
     display: none;
 }
 
@@ -660,6 +674,19 @@ label:hover span{
         margin-bottom: 5rem;
         color:antiquewhite;
     }
+
+    .nav_header_perfil .section{
+        display: none
+    }
+
+    .nav_header_perfil .mobile{
+        display: flex
+    }
+
+    .nav_header_perfil .three{
+        width: 0;
+    }
+
 };
 
 
@@ -1482,18 +1509,24 @@ footer a{
 
     li.mobile.one{
         justify-self: start;
+        height: 80%;
+        margin: 0 0.5rem;
+        padding: 0;
     } 
 
-    li.mobile.two{
-        padding-left: 0;
+    li.mobile.twoo{
+        justify-self: center;
+        padding-top: 2rem;
+        width: 100%;
+        height: auto;
     }
 
-    li.mobile.two a{
+    li.mobile.twoo a{
         font-size: 1.8rem;
     }
 
     li.mobile.four{
-        justify-self: start;
+        justify-self: center;
     } 
 
     .two{
@@ -1530,7 +1563,7 @@ footer a{
 
     li.mobile.four{
         padding: 0 0 0 0.8rem;
-        height: 60%;
+        height: 100%;
         width: 40%;
     }
 
@@ -1592,9 +1625,11 @@ footer a{
     }
 
 
-    li.mobile.five,
-    li.mobile.six{
-        padding: 0;
+    li.mobile.five{
+        padding: 0 1rem;
+        height: 100%;
+        width: 40%;
+        justify-self: start;
     }
       
     aside{
@@ -1607,9 +1642,14 @@ footer a{
     }
 
     .section.five{
-        display: flex;
+        display: none;
         margin: 0;
     }
+
+    .section.six{
+        display: none;
+    }
+
 
     .nav_header li{
         display: flex;
