@@ -797,7 +797,6 @@ label:hover span{
         align-items: center;
         flex-direction: column;
         width: 100vw;
-        height: 100vh;
     }
     .content_profile{
         width: 100vw;
@@ -1586,21 +1585,21 @@ footer a{
         padding: 0;
     }
 
-    li.mobile.one{
+    li.mobile.one, .body_profileUser.nav_header_perfil li.mobile.one{
         justify-self: start;
         height: 80%;
         margin: 0 0.5rem;
         padding: 0;
     } 
 
-    li.mobile.twoo{
+    li.mobile.twoo, .body_profileUser.nav_header_perfil li.mobile.twoo{
         justify-self: center;
         padding-top: 2rem;
         width: 100%;
         height: auto;
     }
 
-    li.mobile.twoo a{
+    li.mobile.twoo a, .body_profileUser.nav_header_perfil li.mobile.twoo{
         font-size: 1.8rem;
     }
 
@@ -1901,4 +1900,7 @@ footer a{
         padding-bottom: 2rem;
     }
 
+    .nav_header .imagen_logo{
+        display: none;
+    }
 }
