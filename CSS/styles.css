@@ -156,7 +156,6 @@ li button{
     font-style: normal;
     font-weight: 700;
     border-radius: 2rem;
-    padding: 0.8rem;
     border: none;
     background-color: black;
     color: white;
@@ -938,39 +937,6 @@ li h1{
     display: none;
 }
 
-.search_icon{
-    display: flex;
-    margin: 2rem 0;
-    justify-content: center;
-    background-color: black;
-    padding: 1rem;
-    border-radius: 1rem;
-}
-
-.search_icon input[type="text"]{
-    width:7.7rem;
-    background: none;
-    border: none;
-    padding-top: 0.3rem;
-    font-family: "Exo 2", sans-serif;
-    color: white;
-    outline: none;
-}
-
-.search_icon input[type="text"]::placeholder{
-    color: white;
-    justify-content: baseline;
-    font-family: "Exo 2", sans-serif;
-    border: none;
-}
-
-.search_icon img{
-    width: 2rem;
-    height: 2rem;
-    margin-right: 0.3rem;
-    border-radius: 0;
-}
-
 .contain .redirection{
     max-width: 9rem;
     min-width: 9rem;
@@ -1496,16 +1462,85 @@ button .image_report{
 /*---------------------------------------------------------------------------------------------------
 DEJABO SECCION PELICULAS */
 
+.nav_header .section.two{
+    background: none;
+    width: 15rem;
+}
+
+.search_icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: black;
+    border-radius: 3rem;
+    align-items: center;
+    box-shadow: 0 1rem 2.5rem rgba(0,0,0,0.3);
+    width: 2.8rem;
+    height: 3rem;
+    transition: width 0.3s ease, border-radius 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.search_icon:hover{
+    width: 15rem;
+    transition: 0.8s;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.search_icon:hover input {
+    width: calc(100% - 40px);
+}
+
+.search_icon img{
+    width: 20px;
+    height: 20px;
+    object-fit: scale-down;
+    border-radius: 0;
+}
+
+.search_icon input{
+    outline: none;
+    border: none;
+    font-weight: 500;
+    background: transparent;
+    padding-left: 1rem;
+    width: 0;
+    transition: width 0.3s ease;
+    position: absolute;
+    left: 0;   
+    color: white;
+}
+
+.search_icon input::placeholder{
+    color: white;
+    padding: 0 4rem ;
+    font-family: "Exo 2", sans-serif;
+}
+
+.search_icon .search{
+    background: none;
+    border: none;
+    cursor: pointer;
+    right: 0;
+    position: absolute;
+    padding: 0 0.5rem 0 0;
+}
+
+.search_icon .search:hover{
+    background: none;
+    transform: none;
+}
+
 .nav_header .section.one{
     background: none;
 }
 
 .nav_header .section.one:hover{
     transform: none;
-}
-
-.nav_header .section.two{
-    background: none;
 }
 
 .contain_peliculas{
