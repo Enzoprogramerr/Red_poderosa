@@ -440,6 +440,16 @@ label:hover span{
         border-radius: 0;
         object-fit: scale-down;
     } 
+
+    .profile_film section form{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .profile_film section form textarea {
+        background-color: rgb(15, 14, 14);
+    }
 }
 /* -------------------------------------------------------------------------------------------*/
 
