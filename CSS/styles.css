@@ -268,6 +268,7 @@ DEBAJO SECCION DE PELICULA*/
     padding-left: 0rem;
     width: 75%;
     border: 1px solid #2e2525;
+    height: auto;
     
 }
 
@@ -311,19 +312,23 @@ DEBAJO SECCION DE PELICULA*/
     display: flex;
     justify-content: center;
 }
+.comment_calify{
+    height: auto;
+}
 
-.rating_section { 
-    display: flex;
+
+.rating_evaluation { 
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px auto;
-    padding: 30px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
     width: fit-content;
     background-color: transparent;
 }
 
-.rating_section .button_pel{
+.rating_evaluation .button_pel{
     width: 100%;
     background: none;
     border: none;
@@ -395,6 +400,74 @@ label:hover span{
     filter: drop-shadow(0 0 4px);
     transform: rotate(.2turn);
     transition-delay: calc(0.1 * attr(data-idx integer));
+}
+.critique-form{
+    height: auto;
+    margin-bottom:30px;
+    display: flex;
+    flex-direction: column;
+}
+.critique-user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.critique-user h2 {
+    align-self: flex-start; /* Mantiene el título alineado a la izquierda */
+    margin-bottom: 10px;
+    margin-left: 9rem;
+}
+.text-film {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+.button_critique {
+    width: 82%;
+    padding: 10px 20px;
+    background-color: #e31212;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.button_critique:hover {
+    background-color: transparent;
+    border:solid;
+    border-color: red;
+    border-radius: 0.7rem;
+    color: #e60606;
+}
+
+.user-film{
+    display: flex;
+    align-items: center;
+}
+.user-film img{
+    height: 4rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+.comments-film {
+    width: 90%;
+    border: solid 1px #524abd;
+    margin: auto;
+    margin-top: 20px;
+}
+.view-button {
+    color: rgb(48, 5, 166);
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+.comment-film {
+    padding: 10px;
 }
 
 @media screen and (max-width: 480px) {

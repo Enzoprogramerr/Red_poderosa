@@ -62,8 +62,8 @@
                  encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
 
-            <article>
-                <div class="rating_section">
+            <section class="comment_calify">
+                <div class="rating_evaluation">
                     <input class="button_pel" type="submit" value="Agregar a mi lista">
                     <div class="rating">
                         <input type="radio" name="rate" id="rating-opt5" data-idx="0" hidden>
@@ -82,13 +82,26 @@
                         <label class="label_pelicula" for="rating-opt1"><span>Muy Malo</span></label>
                     </div>
                 </div>
-            </article>
-            <section>
-                <form action="PostPublication" method="post">
-                    <label for="publication">Escribe tu publicación:</label>
-                    <textarea id="publication" name="publication" rows="5" cols="90" label="" placeholder="Crea una publicacion..."></textarea>
-                    <input type="submit" value="Publicar">
-                  </form>
+                <div class="critique-form">
+                    <section class="comments-film">
+                        <div class="view-plus">
+                            <button class="view-button" onclick="">Ver más comentarios</button>
+                        </div>
+                        <div class="user-film">
+                            <a href="#"><img src="imagenes/foto_canet.png" alt="foto de perfil del usuario"></a>
+                            <a href="#">Yolanda Bringas</a>
+                        </div>
+                        <div class="comment-film">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis at exercitationem atque commodi ea necessitatibus amet adipisci, blanditiis possimus magni 
+                                vero beatae rerum veniam, nesciunt perferendis suscipit molestias reiciendis repudiandae.</p>
+                        </div>
+                    </section>
+                    <div class="critique-user">
+                        <h2>AGREGAR CRITICA</h2>
+                        <textarea class="text-film" type="text" placeholder="Ingresar texto"></textarea>
+                        <input class="button_critique" type="submit" value="Agregar">
+                    </div>
+                </div>
             </section>
         </div>    
     </main>
