@@ -20,12 +20,13 @@
             <section class="form2_index">
                 <h2 class="h2_index">NO ESTÉS SOLO</h2>
                 <p class="p_index">Unete a RED PODEROSA</p>
-                <form action="">
-                    <input type="email" name="usuario" value="" placeholder="Correo electrónico">
-                    <input type="password" name="contraseña" value="" placeholder="Contraseña">
+                <form id="loginForm" action="">
+                    <input id="txt_email" type="email" name="usuario" value="" placeholder="Correo electrónico">
+                    <input id="txt_password" type="password" name="contraseña" value="" placeholder="Contraseña">
                     <button class="bt_index" type="submit"> INGRESAR</button>
                     <p class="p_index">¿No tienes cuenta? ¿Qué esperas? <a class="a_index" href="registro.html">Regístrate aquí</a>.</p>
                 </form>
+                <span id="error_label" style="display:none; color:red;"></span>
                 <ul class="ul_index">
                     <li>Da tu valoración y opinión sobre películas.</li>
                     <li>Comparte experiencia con la comunidad y nutrite de otros.</li>
@@ -34,6 +35,8 @@
             </section>
         </section>
     </main>
+    <script src="JS/login.js"></script>
+    <script src="JS/loginRepository.js"></script>
 </body>
 </html>
 
