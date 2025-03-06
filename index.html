@@ -8,26 +8,23 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="shortcut icon" href="imagenes/Logo.ico" type="image/x-icon">
 </head>
-<body class="body_index">
-    <!--<header>
-        <h1></h1>
-    </header>-->
+
+<body class="body-index">
+
     <main>
-        <section class="content_index">
+        <section class="content-index">
             <img src="imagenes/logo_img.jpeg" alt="logo de red social">
-            <form class="form_index">
-            </form>
-            <section class="form2_index">
-                <h2 class="h2_index">NO ESTÉS SOLO</h2>
-                <p class="p_index">Unete a RED PODEROSA</p>
-                <form id="loginForm" action="">
-                    <input id="txt_email" type="email" name="usuario" value="" placeholder="Correo electrónico">
+            <section class="form-index">
+                <h2 class="h2-index">NO ESTÉS SOLO</h2>
+                <p class="p-index">Unete a RED PODEROSA</p>
+                <form id="form_login" action="">
+                    <input id="txt_email_user" type="email" name="usuario" value="" placeholder="Correo electrónico">
                     <input id="txt_password" type="password" name="contraseña" value="" placeholder="Contraseña">
-                    <button class="bt_index" type="submit"> INGRESAR</button>
-                    <p class="p_index">¿No tienes cuenta? ¿Qué esperas? <a class="a_index" href="registro.html">Regístrate aquí</a>.</p>
+                    <button class="bt-index" type="submit"> INGRESAR</button>
+                    <p class="p-index">¿No tienes cuenta? ¿Qué esperas? <a class="a-index" href="register.html">Regístrate aquí</a>.</p> 
                 </form>
                 <span id="error_label" style="display:none; color:red;"></span>
-                <ul class="ul_index">
+                <ul class="ul-index">
                     <li>Da tu valoración y opinión sobre películas.</li>
                     <li>Comparte experiencia con la comunidad y nutrite de otros.</li>
                     <li>Guarda tus películas favoritas.</li>
@@ -35,10 +32,11 @@
             </section>
         </section>
     </main>
-    <script src="JS/login.js"></script>
-    <script src="JS/loginRepository.js"></script>
+
+    <!-- <script src="JS/login.js"></script>
+    <script src="JS/loginRepository.js"></script> -->
+    <script src="JS/user/LoginRepository.js"></script>
+    <script src="JS/user/Login.js"></script>
+    <!-- <script src="JS/user/ShowLogin.js"></script> -->
 </body>
 </html>
-
-
-
