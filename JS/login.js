@@ -10,8 +10,8 @@ loginForm.addEventListener("submit", function(event) {
     
     // Se crea un objeto 'pedido' con los datos de inicio de sesión
     let pedido = {
-        userEmail: txtEmail.value,
-        password: txtPassword.value
+        EmailUser: txtEmail.value,
+        PasswordUser: txtPassword.value
     };
 
     // Llamo a getLogin para enviar los datos y manejar la respuesta
@@ -20,7 +20,7 @@ loginForm.addEventListener("submit", function(event) {
             console.log(json);
             if(json.success) {
                 // Si el inicio de sesión es exitoso, redirige al usuario
-                window.location.href = "/peliculas.html";
+                window.location.href = "/movie-section.html";
             } else {
                 // Si hay un error, muestra el mensaje en la etiqueta de error
                 let errorLabel = document.getElementById("error_label");

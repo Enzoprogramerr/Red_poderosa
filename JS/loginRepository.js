@@ -1,5 +1,5 @@
-function getLogin(pedido, success) {
-    fetch('http://localhost:5297/Login', {
+function getLogin(pedido, success, error) {
+    fetch('http://localhost:5297/Login/Login', {
         method: 'POST',
         body: JSON.stringify(pedido),
         headers: {
@@ -8,5 +8,5 @@ function getLogin(pedido, success) {
     })
         .then((response) => response.json())
         .then((json) => success(json))
-        .catch((e) => console.log("Error al intentar iniciar sesión:", e));
+        .catch((e) => error (e))
 }
