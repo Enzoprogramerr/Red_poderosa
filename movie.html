@@ -13,31 +13,34 @@
 <body>
     <header>
         <nav>
-            <ul class="nav_header">
+            <ul class="nav-header">
                 <li class="mobile onee">
                     <input type="checkbox" id="check">
-                    <label for="check" class="bar-btn">
+                    <label for="checkbox" class="bar-btn">
                         <img src="imagenes/menu.png" alt="boton navegador">
                     </label>
                     <ul class="nav-menu">
-                        <li><a href="inicio_publicar.html">Inicio</a></li>
-                        <li><a href="perfil.html">Perfil</a></li>
-                        <li><a href="peliculas.html">Peliculas</a></li>
+                        <li><a href="home-publish.html">Inicio</a></li>
+                        <li><a href="profile.html">Perfil</a></li>
+                        <li><a href="movie-section.html">Peliculas</a></li>
                         <li><a href="#"></a>Mi lista de peliculas</li>
+                        <li><a id="dark_mode_responsive" href="#">Dark/Light</a></li>
                         <li><a href="index.html">Cerrar sesion</a></li>
                     </ul>
                 </li>
-                <li class="mobile twoo"><a href="inicio_publicar.html">Red Poderosa</a></li>
+                <li class="mobile twoo"><a href="home-publish.html">Red Poderosa</a></li>
                 <li class="mobile three"><h3>¡Hola usuario!</h3></li>
                 <li class="section one"><img src="imagenes/Logo.ico" alt="logo de red social"></li>
-                <li class="section"><a href="inicio_publicar.html">Inicio</a></li>
-                <li class="section"><a href="peliculas.html">Peliculas</a></li>
-                <li class="section"><a href="perfil.html">Perfil</a></li>
+                <li class="section"><a href="home-publish.html">Inicio</a></li>
+                <li class="section"><a href="movie-section.html">Peliculas</a></li>
+                <li class="section"><a href="profile.html">Perfil</a></li>
+                <li id="dark_mode" href="#"><img class="dark-mode" src="imagenes/darkmode.png" alt=" logo dark-mode"></li>
                 <li class="section"><button onclick="location.href='index.html'">Cerrar sesion</button></li>
             </ul>
         </nav>
     </header>
     <main>
+<<<<<<< HEAD
         <div class="profile_film">
             <article class="contain_port_pel">
                 <h1></h1>
@@ -45,35 +48,50 @@
                     <img src="imagenes/img_spiderman.jpeg" alt="imagen de la pelicula spiderman">
                     <div class="description_pel">
                         <p>
+=======
+        <div class="profile-film">
+            <article class="contain-port-pel">
+                <h1>SPIDER MAN: NO WAY HOME (Sin Camino a Casa ) Trailer</h1>
+                <section class="contain-film">
+                    <img src="imagenes/img_spiderman.jpeg" alt="imagen de la pelicula spiderman">
+                    <div class="description-pel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque maxime itaque quas ipsum. Dicta iusto, beatae deserunt nam corporis et mollitia qui unde itaque ipsum repudiandae omnis placeat expedita nemo?. 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, eligendi soluta dignissimos omnis unde aliquam expedita aperiam, dicta ad natus, eius nesciunt? Minus a distinctio eaque saepe quis aliquam et?. 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, eligendi soluta dignissimos omnis unde aliquam expedita aperiam, dicta ad natus, eius nesciunt? Minus a distinctio eaque saepe quis aliquam et?. 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque deleniti sapiente molestiae aliquid similique. Unde soluta suscipit earum explicabo iusto. Provident aperiam tenetur doloremque laudantium sint
+                        dignissimos iusto consequatur deserunt.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non voluptate a quidem, corporis distinctio voluptates dolores odio ipsam voluptatibus aliquam sint repellendus sit vitae illo excepturi, animi ea
+                        voluptatum! Laboriosam?
+>>>>>>> main
                         </p>
                     </div>
                 </section>
             </article>
 
-            <section class="sec_pel">
+            <section class="sec-pel">
                 <iframe src="https://www.youtube.com/embed/8nNa5A_MRBU?si=zXXpCDv-xsz48BNj" 
                 title="Trailer SPIDER MAN: NO WAY HOME (Sin Camino a Casa)" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                 encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
 
-            <section class="comment_calify">
-                <div class="rating_evaluation">
-                    <input class="button_pel" type="submit" value="Agregar a mi lista">
+            <section class="comment-calify">
+                <div class="rating-evaluation">
+                    <input class="button-pel" type="submit" value="Agregar a mi lista">
                     <div class="rating">
                         <input type="radio" name="rate" id="rating-opt5" data-idx="0" hidden>
-                        <label class="label_pelicula" for="rating-opt5"><span>Muy Bueno</span></label>
+                        <label class="label-movie" for="rating-opt5"><span>Muy Bueno</span></label>
 
                         <input type="radio" name="rate" id="rating-opt4" data-idx="1" hidden>
-                        <label class="label_pelicula" for="rating-opt4"><span>Bueno</span></label>
+                        <label class="label-movie" for="rating-opt4"><span>Bueno</span></label>
 
                         <input type="radio" name="rate" id="rating-opt3" data-idx="2" hidden>
-                        <label class="label_pelicula" for="rating-opt3"><span>Normal</span></label>
+                        <label class="label-movie" for="rating-opt3"><span>Normal</span></label>
 
                         <input type="radio" name="rate" id="rating-opt2" data-idx="3" hidden>
-                        <label class="label_pelicula" for="rating-opt2"><span>Malo</span></label>
+                        <label class="label-movie" for="rating-opt2"><span>Malo</span></label>
 
                         <input type="radio" name="rate" id="rating-opt1" data-idx="4" hidden>
-                        <label class="label_pelicula" for="rating-opt1"><span>Muy Malo</span></label>
+                        <label class="label-movie" for="rating-opt1"><span>Muy Malo</span></label>
                     </div>
                 </div>
                 <div class="critique-form">
@@ -83,7 +101,7 @@
                         </div>
                         <div class="user-film">
                             <a href="#"><img src="imagenes/foto_canet.png" alt="foto de perfil del usuario"></a>
-                            <a href="#">Yolanda Bringas</a>
+                            <a class="link-profile" href="#">Yolanda Bringas</a>
                         </div>
                         <div class="comment-film">
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis at exercitationem atque commodi ea necessitatibus amet adipisci, blanditiis possimus magni 
@@ -93,12 +111,13 @@
                     <div class="critique-user">
                         <h2>AGREGAR CRITICA</h2>
                         <textarea class="text-film" type="text" placeholder="Ingresar texto"></textarea>
-                        <input class="button_critique" type="submit" value="Agregar">
+                        <input class="button-critique" type="submit" value="Agregar">
                     </div>
                 </div>
             </section>
         </div>    
     </main>
+<<<<<<< HEAD
     <script type="module" src="moviesSectionRepository.js"></script>
     <script type="module" src="moviesSection.js"></script>
     
@@ -107,6 +126,16 @@
         <a href="pie-de-pagina.html">Términos de uso</a>
         <a href="pie-de-pagina.html">Terminos de uso</a>
         <a href="pie-de-pagina.html">Politica y privacidad</a>
+=======
+    <footer class="footer">
+        <a href="about-us.html">Quienes somos</a>
+        <a href="about-us.html">Términos de uso</a>
+        <a href="about-us.html">Terminos de uso</a>
+        <a href="about-us.html">Politica y privacidad</a>
+>>>>>>> main
     </footer>
+
+    <script src="JS/DarkMode.js"></script>
+
 </body>
 </html>
