@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Red_poderosa, Red, Poderosa">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="shortcut icon" href="imagenes/Logo.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,15 +15,27 @@
     <header>
         <nav>
             <ul class="nav_header">
-                <li class="mobile one"><button><img src="imagenes/menu.png" alt="boton navegador"></button></li>
+                <li class="mobile onee">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="bar-btn">
+                        <img src="imagenes/menu.png" alt="boton navegador">
+                    </label>
+                    <ul class="nav-menu">
+                        <li><a href="inicio_publicar.html">Inicio</a></li>
+                        <li><a href="perfil.html">Perfil</a></li>
+                        <li><a class="active" href="peliculas.html">Peliculas</a></li>
+                        <li><a href="#"></a>Mi lista de peliculas</li>
+                        <li><a href="index.html">Cerrar sesion</a></li>
+                    </ul>
+                </li>
                 <li class="mobile two"><a href="inicio_publicar.html">Red Poderosa</a></li>
                 <li class="mobile three"><h3>¡Hola usuario!</h3></li>
                 <li class="mobile search"><button><img src="imagenes/magnifying-glass.png" alt="buscador de posteos"></button><p>Busca una pelicula.</p></li>
                 <li class="section one"><img src="imagenes/logo_img.jpeg" alt="logo de red social"></li>
                 <li class="section two">
                     <div class="search_icon">
-                        <img src="imagenes/magnifying-glass.png" alt="buscador de posteos" title="Busca tu pelicula">
-                        <input type="search" id="busqueda_peli" name="" placeholder="Encuentra tu pelicula">
+                        <input type="text" placeholder="Search...">
+                        <button class="search"><img src="imagenes/magnifying-glass.png" alt="buscador de peliculas"></button>
                     </div>
                 </li>
                 <li class="section three"><a href="inicio_publicar.html?">Inicio</a></li>
