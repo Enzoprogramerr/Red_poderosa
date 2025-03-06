@@ -23,7 +23,7 @@ formLogin.addEventListener("submit", (evt) => {
                 // Si hay un error, muestra el mensaje en la etiqueta de error
                 let errorLabel = document.getElementById("error_label");
                 errorLabel.style.display = "block";
-                errorLabel.innerText = `* ${json.message}`;
+                errorLabel.innerText = `* ${json.Message}`;
             }
         });
 })
