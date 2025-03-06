@@ -18,44 +18,47 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>  
     
 </head>
+
 <body>
     <header>
         <nav>
-            <ul class="nav_header">
+            <ul class="nav-header">
                 <li class="mobile one">
                     <input type="checkbox" id="check">
                     <label for="check" class="bar-btn">
                         <img src="imagenes/menu.png" alt="boton navegador">
                     </label>
                     <ul class="nav-menu">
-                        <li><a class="active" href="inicio_publicar.html">Inicio</a></li>
-                        <li><a href="perfil.html">Perfil</a></li>
-                        <li><a href="peliculas.html">Peliculas</a></li>
+                        <li><a class="active" href="home-publish.html">Inicio</a></li>
+                        <li><a href="profile.html">Perfil</a></li>
+                        <li><a href="movie-section.html">Peliculas</a></li>
                         <li><a href="#"></a>Mi lista de peliculas</li>
+                        <li><a id="dark_mode_responsive" href="#">Dark/Light</a></li>
                         <li><a href="index.html">Cerrar sesion</a></li>
                     </ul>
                 </li>
-                <li class="mobile two"><a href="inicio_publicar.html">Red Poderosa</a></li>
+                <li class="mobile two"><a href="home-publish.html">Red Poderosa</a></li>
                 <li class="mobile three"><h3>¡Hola usuario!</h3></li>
-                <li class="mobile five"><a href="peliculas.html"><button><img src="imagenes/estrella_mobile32px.png" alt="Icono califica"></button></a></li>
+                <li class="mobile five"><a href="movie-section.html"><button><img src="imagenes/estrella_mobile32px.png" alt="Icono califica"></button></a></li>
                 <li class="mobile four"><button><img src="imagenes/magnifying-glass.png" alt="buscador de posteos"></button></li>
                 <li class="desktop one"><img src="imagenes/logo_img.jpeg" alt="logo de red social"></li>
                 
-                <li class="desktop"><a href="inicio_publicar.html?">Inicio</a></li>
-                <li class="desktop"><a href="peliculas.html">Peliculas</a></li>
-                <li class="desktop"><a href="perfil.html">Perfil</a></li>
+                <li class="desktop"><a href="home-publish.html">Inicio</a></li>
+                <li class="desktop"><a href="movie-section.html">Peliculas</a></li>
+                <li class="desktop"><a href="profile.html">Perfil</a></li>
+                <li id="dark_mode" href="#"><img class="dark-mode" src="imagenes/darkmode.png" alt=" logo dark-mode"></li>
                 <li class="desktop"><button onclick="location.href='index.html'">Cerrar sesion</button></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <div class="contain">
-            <aside>
-                <div class="redirection">
+            <aside> 
+                <div class="redirect">
                     <p>¡Puedes calificar y recomendar peliculas!</p>
                 </div>
-                <button onclick="location.href='peliculas.html'">Calificar</button>
-                <button onclick="change()">changeMode</button>
+                <button onclick="location.href='movie-section.html'">Calificar</button>
             </aside>
             <div class="navegations">
                 <section>
@@ -63,16 +66,16 @@
                         <label for="publication">Escribe tu publicación:</label>
                         <textarea id="publication" name="publication" rows="5" cols="90" label="" placeholder="Crea una publicacion..."></textarea>
                         <input type="submit" value="Publicar">
-                      </form>
-                      
+                    </form>
+
                 </section>
                 <section>
                     <div class="publications">
-                        <article>
-                            <div class="perfil_nombre">
+                        <article> 
+                            <div class="profile-name">
                                 <div class="group">
                                     <a href="#"><img src="imagenes/foto_canet.png" alt="foto de perfil del usuario"></a>
-                                    <a href="perfilUsuario.html" class="name_perfil">Carlos Murua</a>
+                                    <a href="user-profile.html" class="name-profile">Carlos Murua</a>
                                     <button type="button">Seguir</button>
                                     <button type="button">Me gusta</button>
                                 </div>
@@ -94,7 +97,7 @@
                                     <input type="submit" value="Publicar">
                                 </form> 
                                 <div class="users-comments">
-                                    <div class="perfil_nombre_users">
+                                    <div class="profile-name-users">
                                         <div class="group2">
                                             <a href=""><img src="imagenes/foto_canet.png" alt="foto de perfil del usuario"></a>
                                             <a href="#">Gonzalo Rivadero</a>
@@ -102,24 +105,24 @@
                                             <button type="button">Me gusta</button>
                                         </div>
                                         <button type="button">
-                                            <img src="imagenes/exclamacion-de-archivo.png" alt="Icono reporte" class="image_report" title="Reportar comentario">
+                                            <img src="imagenes/exclamacion-de-archivo.png" alt="Icono reporte" class="image-report" title="Reportar comentario">
                                         </button>
                                     </div>
-                                    <div class="description_users">
+                                    <div class="description-users">
                                         <p>Me parece la mejor pelicula de acción que he visto muy recomendable!!
                                         </p>
                                     </div>
-                                    <div class="perfil_nombre_users">
+                                    <div class="profile-name-users">
                                         <div class="group2">
                                             <a href="#"><img src="imagenes/foto_canet.png" alt="foto de perfil del usuario"></a>
                                             <a href="#">Yolanda Bringas</a>
                                             <button type="button">Siguiendo</button>
                                         </div>
                                         <button type="button">
-                                            <img src="imagenes/exclamacion-de-archivo.png" alt="Icono reporte" class="image_report" title="Reportar comentario">
+                                            <img src="imagenes/exclamacion-de-archivo.png" alt="Icono reporte" class="image-report" title="Reportar comentario">
                                         </button>
                                     </div>
-                                    <div class="description_users">
+                                    <div class="description-users">
                                         <p> Me comentaron que esta muy buena pero todavía no la he visto, esta noche me pongo con eso jeje
                                         </p>
                                     </div>
@@ -130,10 +133,10 @@
                 <section>
                     <div class="publications">
                         <article>
-                            <div class="perfil_nombre">
+                            <div class="profile-name">
                                 <div class="group">
                                     <a href="#"><img src="imagenes/foto_canet.png" alt="foto de perfil del usuario"></a>
-                                    <a href="#" class="name_perfil">Carlos Murua</a>
+                                    <a href="#" class="name-profile">Carlos Murua</a>
                                     <button type="button">Seguir</button>
                                     <button type="button">Me gusta</button>
                                 </div>
@@ -158,7 +161,7 @@
                                     <input type="submit" value="Publicar" >
                                 </form>  
                                 <div class="users-comments">
-                                    <div class="perfil_nombre_users">
+                                    <div class="profile-name-users">
                                         <div class="group2">
                                             <a href=""><img src="imagenes/foto_canet.png" alt="foto de perfil del usuario"></a>
                                             <a href="#">Miriam Casas</a>
@@ -166,10 +169,10 @@
                                             <button type="button">Me gusta</button>
                                         </div>
                                         <button type="button">
-                                            <img src="imagenes/exclamacion-de-archivo.png" alt="Icono reporte" class="image_report" title="Reportar comentario">
+                                            <img src="imagenes/exclamacion-de-archivo.png" alt="Icono reporte" class="image-report" title="Reportar comentario">
                                         </button>
                                     </div>
-                                    <div class="description_users">
+                                    <div class="description-users">
                                         <p>Me parece la mejor pelicula de acción que he visto muy recomendable!!
                                         </p>
                                     </div>
@@ -180,12 +183,14 @@
             </div>
         </div>
     </main>
-    <footer>
-        <a href="pie-de-pagina.html">Quienes somos</a>
-        <a href="pie-de-pagina.html">Términos de uso</a>
-        <a href="pie-de-pagina.html">Terminos de uso</a>
-        <a href="pie-de-pagina.html">Politica y privacidad</a>
+    <footer class="footer">
+        <a href="about-us.html">Quienes somos</a>
+        <a href="about-us.html">Términos de uso</a>
+        <a href="about-us.html">Terminos de uso</a>
+        <a href="about-us.html">Politica y privacidad</a>
     </footer>
-    <script src="JS/main.js"></script>
+
+    <script src="JS/DarkMode.js"></script>
+
 </body>
 </html>
