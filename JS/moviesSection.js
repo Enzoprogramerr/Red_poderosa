@@ -6,7 +6,7 @@ getMovies((data) => {
         const movies = data.movies;  // Aquí obtenemos el array de películas
 
         // Obtenemos el contenedor de la sección de mejores películas
-        const bestMovieSection = document.getElementById('movies');
+        const bestMovieSection = document.getElementById('movie-section.html');
 
         // Limpiamos la sección antes de agregar las películas
         bestMovieSection.innerHTML = '';
