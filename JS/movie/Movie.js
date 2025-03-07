@@ -87,8 +87,8 @@ class Movie {
                     </section>
                     <div class="critique-user">
                         <h2>AGREGAR CRITICA</h2>
-                        <textarea class="text-film" type="text" placeholder="Ingresar texto"></textarea>
-                        <input class="button-critique" type="submit" value="Agregar">
+                        <textarea id="commentMovie" class="text-film" type="text" placeholder="Ingresar texto"></textarea>
+                        <input id="commentButton" class="button-critique" type="submit" value="Agregar">
                     </div>
                 </div>
             </section>
@@ -122,23 +122,64 @@ document.addEventListener("DOMContentLoaded", function() {
     } 
 });
 
-let placeholder = document.getElementById("commentButton");
+/*let placeholder = document.getElementById("commentButton");
 placeholder.addEventListener("click", function(event){
-    event.preventDefault();
-    let comment = document.getElementById("commentMovie").value;
-    let idUser = localStorage.getItem("idUser");
-    let idMovie = localStorage.getItem("idMovie");
-    let dataTime = new Date().toISOString()
-    fetch("http://localhost:5297/api/Comment",{
-        method: 'POST',
-        headers: {'Content-Type':'aplication/json'},
-        body: JSON.stringify({
-            idUser: idUser,
-            idMovie: idMovie,
-            text: comment,
-            createdAt:  dataTime      
-        })
-    })
+    event.preventDefault();*/
+document.addEventListener('DOMContentLoaded', (event) => {
+    const commentButton = document.getElementById('commentButton');
 
+    if (commentButton) {
+        commentButton.addEventListener('click', () => {
+            const commentInput = document.getElementById('commentMovie');
+            const comment = commentInput ? commentInput.value : '';
 
-})
+            if (comment) {
+                console.log('Comentario ingresado:', comment);
+                let idUser = localStorage.getItem("idUser");
+                let idMovie = localStorage.getItem("idMovie");
+                let dataTime = new Date().toISOString()
+                fetch("http://localhost:5297/api/Comment",{
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        idUser: idUser,
+                        idMovie: idMovie,
+                        text: comment,
+                        createdAt:  dataTime      
+                    })
+                })
+                .then((response) => response.json())
+                .then((json) => {
+                    if (json.success) {
+                        console.log('Éxito:', json.message);
+                        success(json.message); 
+                    } else {
+                        console.error('Error:', json.message);
+                        error(json.message); 
+                    }
+                })
+                .catch((e) => {
+                    console.error('Error:', e);
+                    error(e); // Manejar errores de red u otros errores
+                });
+                // Aquí puedes procesar el comentario, por ejemplo, agregarlo a una lista de comentarios.
+                
+                // Ejemplo: Mostrar el comentario en algún elemento del DOM
+                /*const commentsSection = document.getElementById('commentsSection');
+                if (commentsSection) {
+                    const commentElement = document.createElement('p');
+                    commentElement.textContent = comment;
+                    commentsSection.appendChild(commentElement);
+                }*/
+                
+                // Limpia el campo de entrada después de enviar el comentario.
+                commentInput.value = '';
+            } else {
+                console.error('El campo de comentario está vacío');
+            }
+        });
+    } else {
+        console.error('El botón commentButton no existe en el DOM');
+    }
+});
+    
