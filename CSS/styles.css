@@ -370,9 +370,13 @@ DEBAJO SECCION DE PELICULA*/
     flex-direction: row-reverse;
     font-size: 5rem;
     position: relative;
-    padding: 0 50px 8%;
+    padding: 0px 10px;
     color: #ffc904;
 }
+
+.oculto {
+    display: none;
+  }
 
 .label-movie [type="radio"]:hover{
     transform: scale(1.1);
