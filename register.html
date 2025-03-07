@@ -16,23 +16,35 @@
         
             <div class= "form">
                 
-                <form action="#" method= "post">
+                <form id="form_register" action="#" method= "post">
                     <h3>¡¡DATE DE ALTA!!</h3>
-                    <P>Tu cuenta en un solo click</P>
-                    <input class= "form-register" type= "text" name= "name" placeholder= "Nombre" required>
-                    <input class= "form-register" type= "text" name= "lastname" placeholder= "Apellido" required>
-                    <input class= "form-register" type= "date" name= "birthdate" placeholder= "Fecha de nacimiento" required>
-                    <input class= "form-register" type= "email" name= "email" placeholder= "Correo Electrónico" required>
-                    <input class= "form-register" type= "password" name= "password" placeholder= "Contraseña" required>
+                    <h4>Tu cuenta en un solo click</h4>
+                    <p>Nombre:</p>
+                    <input id="user_name" class= "form-register" type= "text" name= "name" placeholder= "Nombre" required>
+                    <p>Apellido:</p>
+                    <input id="user_lastname" class= "form-register" type= "text" name= "lastname" placeholder= "Apellido" required>
+                    <p>Fecha de nacimiento</p>
+                    <input id="user_birthdate" class= "form-register" type= "date" name= "birthdate" placeholder= "Fecha de nacimiento" required>
+                    <P>Descripción:</P>
+                    <textarea id="user_description" class= "form-register" name="description" rows="2" cols="30" placeholder="Agregue una descripción..."></textarea>
+                    <p>Correo electrónico:</p>
+                    <input id="user_email" class= "form-register" type= "email" name= "email" placeholder= "Correo Electrónico" required>
+                    <p>Contraseña:</p>
+                    <input id="user_password" class= "form-register" type= "password" name= "password" placeholder= "Contraseña" required>
                     <label>
                         <input type="checkbox" id="mayor_edad" required>
                         Confirmo que soy mayor de 18 años
                     </label>
-                    <button class= "registration-button">DARME DE ALTA</button>
+                    <button class="registration-button" type="submit">DARME DE ALTA</button>
                 </form>
+                <span id="error_label" style="display:none; color:red;"></span>
             </div>
         <!-- </div> -->
     </section>
+
+    <script src="JS/user/registerRepository.js"></script>
+    <script src="JS/user/register.js"></script>
+
 </body>
 </html>
 
