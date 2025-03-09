@@ -1,4 +1,4 @@
-async function searchMovie(movieName) {
+export async function searchMovie(movieName) {
     try {
         const response = await fetch(`http://localhost:5297/Movie/byName?Title=${encodeURIComponent(movieName)}`,{
             method: 'GET',
@@ -14,7 +14,7 @@ async function searchMovie(movieName) {
         console.log("Movie data:", data);
         localStorage.setItem('movieData', JSON.stringify(data));
         localStorage.setItem('idMovie', data.id)
-        window.location.href = "movie.html";
+        window.location.href = `movie.html?title=${encodeURIComponent(movieNname)}`;
         
     } catch (error) {
         console.error("Error fetching movie data:", error);
@@ -41,5 +41,4 @@ document.addEventListener("DOMContentLoaded", function() {
             searchButton.click();
         }
     });
-    //
 })

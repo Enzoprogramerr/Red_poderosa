@@ -1,12 +1,13 @@
+import { searchMovie } from './Movie-Section.js';
+
 class Comment{
     constructor(comment)
     {
-        idComment: 3,
-    this.avatar = avatarUser;
-    this.idUser = idUser;
-    this.useRName = userName;
-    this.text = text; 
-    this.date = createdAt; 
+        this.avatar = comment.avatarUser; 
+        this.idUser = comment.idUser; 
+        this.useRName = comment.userName; 
+        this.text = comment.text; 
+        this.date = comment.createdAt
     }
 
     getTemplate(){
@@ -110,26 +111,25 @@ function showMovie(movie){
     let movieContainer = document.getElementsByClassName("profile-film")[0];
     if (!movieContainer) {
         console.error("El elemento 'profile-film' no se encontró.");
-        return;}
-    console.log(movieContainer)
+        return;
+    }
     movieContainer.innerHTML = "";
-    console.log(movie);
-    console.log(movie.comments);
     let m = new Movie(movie);
     let node = document.createElement('div');
     node.innerHTML = m.getTemplate();
     movieContainer.append(node);
-    localStorage.setItem("idMovie", movie.id)
-    localStorage.setItem("titleMovie", movie.title)
+    localStorage.setItem("idMovie", movie.id);
+    localStorage.setItem("titleMovie", movie.title);
     }
 
-document.addEventListener("DOMContentLoaded", function() {
-    const movieData = JSON.parse(localStorage.getItem('movieData'));
-    if (movieData) {
+document.addEventListener("DOMContentLoaded", async function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const movieTitle = urlParams.get('title');
+        if (movieTitle){
+            await searchMovie(movieTitle);
+        }
+        const movieData = JSON.parse(localStorage.getItem('movieData'));
         showMovie(movieData);
-    } else {
-        console.error("No se encontraron datos de la película en localStorage.");
-    } 
 });
 
 
