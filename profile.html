@@ -14,9 +14,6 @@
 <body class="profile">
     <header>
         <nav>
-            
-            
-
             <ul class="nav-header-profile">
                 <li class="mobile onee">
                     <input type="checkbox" id="check">
@@ -43,6 +40,7 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="content-profile">
             <div class="profile-photo"> 
@@ -75,8 +73,8 @@
                 <button type="button" class="btn btn-custom" data-bs-toggle="modal" 
                 data-bs-target="#exampleModal">Editar Perfil
                 </button>
-                  
-                  <!-- Modal para editar perfil -->
+                
+                <!-- Modal para editar perfil -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div id="edit_profile_modal" class="modal-content">
@@ -107,14 +105,13 @@
                                         <label for="user_description" class="form-label">Descripción:</label>
                                         <textarea class="form-control" id="user_description" name="descripcion" rows="4" placeholder="Escribe algo sobre ti..."></textarea>
                                     </div>
+                                    
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                                    </div>
                                 </form>
                                 <span id="error_label" style="display:none; color:red;"></span>
-
-                            
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="submit" class="btn btn-primary">Guardar cambios</button>
                             </div>
                         </div>
                     </div>
@@ -124,34 +121,11 @@
                 <h2>Yoli bringas</h2>
                 <p>Correo Electrónico: usuario@gmail.com</p>
                 <p>Fecha de Nacimiento: 01 de enero de 2000</p>
-                <p>Ubicación: Ciudad, País</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsum illo velit corporis porro ex tenetur placeat natus fuga ipsam labore, illum omnis dolore facilis voluptatibus eos, dolores assumenda maxime?Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vel? Eligendi architecto aperiam, facere amet explicabo esse blanditiis similique nemo odio exercitationem qui animi itaque beatae nostrum nam ut. Iusto?</p>
-            </section>
-            <section class="followers-contain">
-                <h2>Seguidores</h2>
-                <ul class="followers-list">
-                    <li class="follower-item" data-id="1">
-                        <a href="#" class="follower-link">
-                            <img src="avatar1.jpg" alt="Usuario 1" class="avatar">
-                            <span class="username">Usuario 1</span>
-                        </a>
-                    </li>
-                    <li class="follower-item" data-id="2">
-                        <a href="#" class="follower-link">
-                            <img src="avatar2.jpg" alt="Usuario 2" class="avatar">
-                            <span class="username">Usuario 2</span>
-                        </a>
-                    </li>
-                    <li class="follower-item" data-id="3">
-                        <a href="#" class="follower-link">
-                            <img src="avatar3.jpg" alt="Usuario 3" class="avatar">
-                            <span class="username">Usuario 3</span>
-                        </a>
-                    </li>
-                </ul>
+                <p>Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsum illo velit corporis porro ex tenetur placeat natus fuga ipsam labore, illum omnis dolore facilis voluptatibus eos, dolores assumenda maxime?Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vel? Eligendi architecto aperiam, facere amet explicabo esse blanditiis similique nemo odio exercitationem qui animi itaque beatae nostrum nam ut. Iusto?</p>
             </section>
         </section>
     </main>
+
     <footer class="footer">
         <a href="about-us.html">Quienes somos</a>
         <a href="about-us.html">Términos de uso</a>
