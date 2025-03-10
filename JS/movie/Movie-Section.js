@@ -1,4 +1,4 @@
-async function searchMovie(movieName) {
+export async function searchMovie(movieName) {
     try {
         const response = await fetch(`http://localhost:5297/Movie/byName?Title=${encodeURIComponent(movieName)}`,{
             method: 'GET',
@@ -13,8 +13,9 @@ async function searchMovie(movieName) {
         const data = await response.json();
         console.log("Movie data:", data);
         localStorage.setItem('movieData', JSON.stringify(data));
-        window.location.href = "movie.html";
-        /* showMovie(data) */
+        localStorage.setItem('idMovie', data.id)
+        window.location.href = `movie.html?title=${encodeURIComponent(movieNname)}`;
+        
     } catch (error) {
         console.error("Error fetching movie data:", error);
     }
@@ -23,7 +24,7 @@ async function searchMovie(movieName) {
 document.addEventListener("DOMContentLoaded", function() {
     const searchButton = document.getElementById("search-button");
     const searchBox = document.getElementById("search-box");
-
+    //TODO-AGREGAR QUE TOME EL CLICK AL DARLE EN UNA IMG DE PELICULA
     searchButton.addEventListener("click", function() {
         const movieName = searchBox.value;
         if (movieName) {
