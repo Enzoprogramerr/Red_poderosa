@@ -7,6 +7,7 @@ function renderMovies(movies, containerId) {
         movies.forEach(movie => {
             const movieLink = document.createElement('a'); 
             movieLink.href = `movie.html?title=${encodeURIComponent(movie.name)}`; // Enlace a la página de la película
+            movieLink.className = 'movie-link';
 
             const movieImage = document.createElement('img');
             movieImage.src = movie.imageUrl; // Imagen de la película

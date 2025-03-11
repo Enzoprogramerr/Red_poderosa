@@ -510,6 +510,10 @@ label:hover span{
     padding: 3px;
 }
 
+.comment.oculto {
+    display: none;
+}
+
 .comment-film {
     padding: 10px;
 }

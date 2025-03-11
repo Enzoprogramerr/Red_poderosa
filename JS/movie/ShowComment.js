@@ -1,4 +1,4 @@
-function cargarComentarios() {
+/*function cargarComentarios() {
     let title = localStorage.getItem("titleMovie"); 
     let page = 1;
     let pageSize = 6;
@@ -32,4 +32,4 @@ document.getElementById("view-comment").addEventListener("click", function() {
     }
     const comentarioContainer = document.getElementById("contenedor");
     cargarComentarios(comentarioContainer);
-});
+});*/
