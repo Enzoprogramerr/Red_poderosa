@@ -10,9 +10,7 @@
 <body>
     <section class= "content-form">
         <img src="imagenes/fondo_peli.jpg" alt= "Imagen de películas">
-        <button class= "start-button" onclick="location.href='index.html';">Página Principal</button>
-        <!-- <div class= "phrase-content"> -->
-            
+        <button class= "start-button" onclick="location.href='index.html';">Página Principal</button>            
         
             <div class= "form">
                 
@@ -31,15 +29,10 @@
                     <input id="user_email" class= "form-register" type= "email" name= "email" placeholder= "Correo Electrónico" required>
                     <p>Contraseña:</p>
                     <input id="user_password" class= "form-register" type= "password" name= "password" placeholder= "Contraseña" required>
-                    <label>
-                        <input type="checkbox" id="mayor_edad" required>
-                        Confirmo que soy mayor de 18 años
-                    </label>
                     <button class="registration-button" type="submit">DARME DE ALTA</button>
                 </form>
                 <span id="error_label" style="display:none; color:red;"></span>
             </div>
-        <!-- </div> -->
     </section>
 
     <script src="JS/user/registerRepository.js"></script>
@@ -47,15 +40,3 @@
 
 </body>
 </html>
-
-<!-- <div class="container">
-    <h2>Registro de Usuario</h2>
-    <form action="#" method="POST">
-        <input type="text" name="nombre" placeholder="Nombre" required>
-        <input type="text" name="apellido" placeholder="Apellido" required>
-        <input type="date" name="fecha_nacimiento" required>
-        <input type="email" name="correo" placeholder="Correo Electrónico" required>
-        <input type="password" name="contraseña" placeholder="Contraseña" required>
-        <button type="submit">Registrarse</button>
-    </form>
-</div> -->

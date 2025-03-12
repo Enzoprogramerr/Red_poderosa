@@ -13,7 +13,7 @@ body {
 }
 
 .content-form {
-    position: relative; /* Permite posicionar el botón dentro */
+    position: relative; 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,24 +30,22 @@ body {
 }
 
 .content-form img {
-    width: 48%; /* La imagen ocupará la mitad del contenedor */
+    width: 48%; 
     height: 60%;
     border-radius: 5%;
 }
 
 .form {
-    width: 50%; /* El formulario ocupará la otra mitad */
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .form form {
-    /* line-height: 2rem; */
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* border: 2px solid #00ff; */
     border-radius: 5%;
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.1);
@@ -85,105 +83,3 @@ body {
 p {
     text-align: justify;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* *{
-    margin:0;
-    padding: 0;
-}
-
-img {
-    height: 400px;
-    width: 400px;
-}
-
-.start-button{
-    margin-top: 2rem;
-    margin-left: 18rem;
-    border-radius: 6px;
-    padding: 4px;
-    background-color: red;
-    color: antiquewhite;
-    border: 2px solid #ff7700;
-}
-
-.content-form {
-    color: antiquewhite;
-    background-color: rgb(10, 10, 10);
-    border-radius: 5%;
-    text-align: center;
-    margin-top: 3rem;
-    height: 32rem;
-    width: 30rem;
-    margin-left: 25rem;
-    border: 1px solid rgb(92, 92, 152);
-}
-
-.phrase-content{
-    margin-top: 2rem;
-    
-}
-
-.form{
-    margin-top: 2rem;
-}
-
-.form form{
-    line-height: 2rem;
-    display: flex;
-    flex-direction: column;
-    width: 20rem;
-    margin-left: 5rem;
-    border: 2px solid #00ff;
-    border-radius: 5%;
-}
-
-.registration-button{
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    background-color: red;
-    color: white;
-    padding: 10px 20px;
-    border:2px solid #ff7700;
-    border-radius: 10px;
-}
-
-img{
-    width: 5rem;
-    display: block;
-}  */
