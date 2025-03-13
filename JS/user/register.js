@@ -25,15 +25,35 @@ signUp.addEventListener("submit", (event) => {
     };
 
 
+    // getRegister(pedido, (json) => {
+    //     if (json.success) {
+    //         alert("Registro exitoso. ¡Bienvenido/a!");
+    //         window.location.href = "/index.html";
+    //     } else {
+    //         let errorLabel = document.getElementById("error_label");
+    //         errorLabel.style.display = "block";
+    //         errorLabel.innerText = `* ${json.message}`;
+    //     }
+    // });
+
     getRegister(pedido, (json) => {
         if (json.success) {
-            window.location.href = "/index.html";
+            Swal.fire({
+                title: "Registro exitoso",
+                text: "¡Bienvenido!",
+                icon: "success",
+                confirmButtonText: "Aceptar"
+            }).then(() => {
+                window.location.href = "/index.html";
+            });
         } else {
             let errorLabel = document.getElementById("error_label");
             errorLabel.style.display = "block";
             errorLabel.innerText = `* ${json.message}`;
         }
     });
+    
+
 });
 
 
