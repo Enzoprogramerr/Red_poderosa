@@ -1718,6 +1718,30 @@ aside {
     margin-right: 10%;
 }
 
+.pagination{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 86%;
+    padding: 2px;
+    margin: 0 auto
+}
+.page-btn {
+    flex-grow: 1;
+    background-color:transparent;
+    border: 2px solid  hsla(0, 100%, 35%, 0.486);;
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+}
+.page-btn:hover {
+    background-color: hsla(0, 100%, 35%, 0.486); /* Color de fondo cuando el mouse pasa por encima */
+}
+
+.page-btn:disabled {
+    background-color: transparent; /* Color gris cuando está deshabilitado */
+    cursor: not-allowed;
+}
 footer a{
     color: whitesmoke;
     font-size: 1.1rem;
