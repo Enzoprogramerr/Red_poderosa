@@ -1,45 +1,34 @@
-let editProfileModal = document.getElementById("edit_profile_modal");
-
-editProfileModal.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    let userId = localStorage.getItem("userId"); // Asegúrate de obtenerlo correctamente
-    let userName = document.getElementById("user_name").value;
-    let userLastname = document.getElementById("user_lastname").value;
-    let userBirthdate = document.getElementById("user_birthdate").value;
-    let userEmail = document.getElementById("user_email").value;
-    let userDescription = document.getElementById("user_description").value;
-
-   // Convertimos la fecha a ISO 8601 o la dejamos como null si está vacía
-    const formattedBirthdate = userBirthdate ? new Date(userBirthdate).toISOString() : null;
-
-
-    if (!userId) {
-        alert("Error: No se encontró el ID de usuario.");
-        return;
+class ProfileUser {
+    constructor(user) {
+        this.id = user.id;
+        this.name = `${user.name} ${user.lastName}`;
+        this.email = user.email;
+        this.birthdate = user.birthdate || "No disponible"; 
+        this.description = user.description || "Sin descripción";
     }
 
-    let pedido = {
-        IdUser: parseInt(userId),  // 🔹 Agregar IdUser obligatorio
-        Name: userName,
-        LastName: userLastname,
-        Birthdate: formattedBirthdate,
-        Description: userDescription,
-        Email: userEmail,
-    };
+    getTemplate() {
+        return `
+        <section class="data-profile">
+            <h2>${this.name}</h2>
+            <p>Correo Electrónico: ${this.email}</p>
+            <p>Fecha de Nacimiento: ${this.birthdate}</p>
+            <p>Descripción: ${this.description}</p>
+        </section>
+        `;
+    }
+}
 
+// Renderizar el perfil en el DOM
+function renderUserProfile(profile) {
+    const container = document.getElementById("profile_user_container");
+    if (container) {
+        container.innerHTML = profile.getTemplate();
+    }
+}
 
-    getPutProfile(pedido, (json) => {
-        if (json.success) {
-            window.location.href = "/profile.html";
-        } else {
-            let errorLabel = document.getElementById("error_label");
-            if (errorLabel) {
-                errorLabel.style.display = "block";
-                errorLabel.innerText = `* ${json.message}`;
-            }
-        }
-    });
-});
-
-
+// Llamar a la función para obtener y mostrar el perfil
+getUserProfile(
+    (profile) => renderUserProfile(profile),
+    (error) => console.error("Error al obtener el perfil del usuario:", error)
+);
