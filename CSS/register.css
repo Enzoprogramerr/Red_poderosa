@@ -29,7 +29,7 @@ body {
     border: 1px solid rgb(92, 92, 152);
 }
 
-.content-form img {
+.img {
     width: 48%; 
     height: 60%;
     border-radius: 5%;
@@ -42,7 +42,7 @@ body {
     align-items: center;
 }
 
-.form form {
+.register{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -53,10 +53,10 @@ body {
 
 .start-button {
     position: absolute;
-    top: 10px;
-    left: 780px;
+    top: 30px;
+    left: 100px;
     transform: translateX(-50%);
-    padding: 10px 20px;
+    padding: 10px;
     background-color: red;
     color: antiquewhite;
     border: 2px solid #ff7700;
@@ -82,4 +82,35 @@ body {
 
 p {
     text-align: justify;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .content-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        padding: 2rem;
+        margin: auto;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .register {
+        width: 200%;
+    } 
+
+    .start-button {
+        top: 10px;
+        left: 80%;
+        width: 20%;
+        height: 10%;
+    }
 }
