@@ -283,12 +283,10 @@ DEBAJO SECCION DE PELICULA*/
     display: flex;
     flex-direction: column;
     width: 75%;
-    border: 1px solid #2e2525;
     height: auto;
     background-color: white;
     padding: 5px;
     border-radius: 5px;
-    border:2px solid red;
 }
 
 .dark .profile-film{
@@ -298,15 +296,22 @@ DEBAJO SECCION DE PELICULA*/
 
 .contain-film{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
+    align-items: center;
+}
 
+#movie-title-container{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .contain-port-pel h1{
     margin-bottom: 4rem;
     padding-top: 2rem;
-    padding-left: 10rem;
+    width: 100%;
     padding-bottom: 2rem;
     font-family: 'Arial', sans-serif;
     font-size: 3rem;
@@ -325,17 +330,31 @@ DEBAJO SECCION DE PELICULA*/
     font-size: 18px;
 }
 
-.sec-pel{
-    height: 30rem;
 
+.video-responsive{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
 }
-.sec-pel iframe {
+
+.video-responsive iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* .sec-pel iframe {
     width: 100%;
     height: 100%;
     margin-top: 4rem;
     display: flex;
     justify-content: center;
-}
+} */
 
 
 
@@ -344,7 +363,6 @@ DEBAJO SECCION DE PELICULA*/
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: 40px;
     padding: 20px;
     width: fit-content;
     background-color: transparent;
@@ -357,8 +375,9 @@ DEBAJO SECCION DE PELICULA*/
     padding: 7px;
     color: red;
     font-size: 15px;
-    cursor: pointer;
     margin-bottom: 10px;
+    display: grid;
+    justify-content: center;
 }
 
 .button-pel:hover {
@@ -402,7 +421,7 @@ span{
     opacity: 0;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -30px;
     width: 100%;
     text-align: center;
     height: 45px;
@@ -472,6 +491,8 @@ label:hover span{
 .user-film{
     display: flex;
     align-items: center;
+    padding-top:0.5rem;
+    border-radius: 10px;
 }
 .user-film img{
     height: 4rem;
@@ -495,8 +516,9 @@ label:hover span{
     background-color: wheat;
 }
 
+
 .dark .comments-film{
-    background-color: rgba(255, 255, 255, 0.1)
+    background-color: black
 }
 
 .view-button {
@@ -509,9 +531,79 @@ label:hover span{
     border-radius: 5px;
     padding: 3px;
 }
+.comment.oculto {
+    display: none;
+}
+.comment{
+    display: block;
+    border: #bdbdbd;
+    border-radius: 10%;
+    border-color: #ccc;
+} 
+
+#contenedor{
+    background-color: rgb(255, 255, 255, 0.1);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.comment .link-profile{
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.comment .user-film time{
+    margin-left: 2rem;
+    color: #ccc;
+}
 
 .comment-film {
-    padding: 10px;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid whitesmoke;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 5px;
+    background-color:rgb(15, 14, 14);
+}
+
+.critique-form .comments-film .view-plus{
+    background-color: black;
+}
+
+.comment-film p{
+    margin-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.arrow-button.oculto{
+    display: none;
+}
+
+/* Estilos para el botón */
+.arrow-button {
+    padding: 6px 6px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Pseudo-elemento para la flecha hacia abajo */
+.arrow-button::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(45deg);
 }
 
 @media screen and (max-width: 480px) {
@@ -531,8 +623,6 @@ label:hover span{
     .contain-film img{
         height: auto;
         width: 80%;
-        padding-left: 5rem;
-    
     }
     .description-pel{
         padding-left: 2rem;
@@ -1714,6 +1804,30 @@ aside {
     margin-right: 10%;
 }
 
+.pagination{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 86%;
+    padding: 2px;
+    margin: 0 auto
+}
+.page-btn {
+    flex-grow: 1;
+    background-color:transparent;
+    border: 2px solid  hsla(0, 100%, 35%, 0.486);;
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+}
+.page-btn:hover {
+    background-color: hsla(0, 100%, 35%, 0.486); /* Color de fondo cuando el mouse pasa por encima */
+}
+
+.page-btn:disabled {
+    background-color: transparent; /* Color gris cuando está deshabilitado */
+    cursor: not-allowed;
+}
 footer a{
     color: whitesmoke;
     font-size: 1.1rem;

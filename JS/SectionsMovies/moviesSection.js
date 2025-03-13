@@ -1,85 +1,53 @@
-// Función para renderizar películas en el contenedor
-function renderMovies(movies, containerId) {
-    const container = document.getElementById(containerId);
-    container.innerHTML = ''; // Limpiar el contenedor de películas antes de agregar nuevas
+// Función para renderizar películas en el contenedor fijo 'best_reviewed_container'
+function renderMovies(movies, page = 1, totalPages = 1) {
+    const container = document.getElementById('best_reviewed_container');
+    container.innerHTML = ''; // Limpiar el contenedor antes de agregar nuevas películas
 
     if (movies && Array.isArray(movies) && movies.length > 0) { 
         movies.forEach(movie => {
             const movieLink = document.createElement('a'); 
             movieLink.href = `movie.html?title=${encodeURIComponent(movie.name)}`; // Enlace a la página de la película
+            movieLink.className = 'movie-link';
+            movieLink.href = `movie.html?title=${encodeURIComponent(movie.name)}`;
 
             const movieImage = document.createElement('img');
-            movieImage.src = movie.imageUrl; // Imagen de la película
-            movieImage.alt = movie.name; // Texto alternativo para la imagen
+            movieImage.src = movie.imageUrl;
+            movieImage.alt = movie.name;
 
-            movieLink.appendChild(movieImage); // Añadir la imagen al enlace
-            container.appendChild(movieLink); // Añadir el enlace al contenedor
+            movieLink.appendChild(movieImage);
+            container.appendChild(movieLink);
         });
     } else {
-        container.innerHTML = '<p>No se encontraron películas.</p>'; // Mensaje en caso de que no haya películas
+        container.innerHTML = '<p>No se encontraron películas.</p>';
     }
+    // Actualizar los botones de paginación
+    updatePaginationButtons(page, totalPages);
 }
 
-// Función para obtener películas filtradas por género o tipo de Oscar
-function filterMoviesByGenre(containerId, genreType) {
+// Función para obtener películas filtradas por género
+function filterMoviesByGenre(genreType) {
     const selectedGenres = [];
-    const checkboxes = document.querySelectorAll(`#${containerId} input[type="checkbox"]`);
+    const checkboxes = document.querySelectorAll(`#category_reviewed_container input[type="checkbox"]`);
 
-    // Obtener todos los géneros seleccionados
     checkboxes.forEach(checkbox => {
         if (checkbox.checked) {
             selectedGenres.push(checkbox.value);
         }
     });
 
-    // Si no se selecciona ningún género o tipo de Oscar, mostramos todas las películas de Oscar
-    if (selectedGenres.length === 0 && genreType === 'oscar') {
-        getOscarMovies((movies) => { 
-            renderMovies(movies, 'best_oscar_container');
-        }, (error) => {
-            console.log("Error al obtener las películas de Oscar:", error);
-        });
-    } else {
-        // Si se seleccionan géneros, filtramos por esos géneros
-        selectedGenres.forEach(genreId => {
-            getMoviesByGenre(genreId, (movies) => { 
-                renderMovies(movies, genreType === 'oscar' ? 'best_oscar_container' : 'best_reviewed_container');
-            }, (error) => {
-                console.log("Error al obtener las películas filtradas:", error);
-            });
-        });
-    }
+    const genreQuery = selectedGenres.length > 0 ? selectedGenres.join(',') : 'all';
+    console.log(`Filtrando ${genreType} por género:`, genreQuery);
 
-    // Si no se selecciona ningún género y no estamos en 'oscar', mostramos todas las películas generales
-    if (selectedGenres.length === 0 && genreType !== 'oscar') {
-        getMoviesByGenre('all', (movies) => { 
-            renderMovies(movies, genreType === 'oscar' ? 'best_oscar_container' : 'best_reviewed_container');
-        }, (error) => {
-            console.log("Error al obtener las películas:", error);
-        });
-    }
+    // Llamar a la función para obtener y renderizar las películas filtradas
+    getMoviesByGenre(genreQuery, (movies, totalPages) => {
+        renderMovies(movies, currentPage, totalPages);
+    });
 }
 
-// Cargar todas las películas de Oscar al inicio
-getOscarMovies((movies) => { 
-    renderMovies(movies, 'best_oscar_container'); 
-}, (error) => {
-    console.log('Error al obtener las películas de Oscar:', error);
-});
-
-// Cargar todas las películas generales al inicio
-getMoviesByGenre('all', (movies) => { 
-    renderMovies(movies, 'best_reviewed_container'); 
-}, (error) => {
-    console.log('Error al obtener las películas:', error);
-});
-
-// Evento para filtrar películas por género en 'Mejores Películas'
-document.getElementById('category_reviewed_container').addEventListener('change', () => {
-    filterMoviesByGenre('category_reviewed_container', 'reviewed');
-});
-
-// Evento para filtrar películas por género en 'Películas Premidas Oscar'
-document.getElementById('category_oscar_container').addEventListener('change', () => {
-    filterMoviesByGenre('category_oscar_container', 'oscar');
-});
+// Para la sección de películas generales
+const categoryContainer = document.getElementById('category_reviewed_container');
+if (categoryContainer) {
+    categoryContainer.addEventListener('change', () => {
+        filterMoviesByGenre('general');
+    });
+}

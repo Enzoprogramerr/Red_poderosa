@@ -19,6 +19,7 @@ formLogin.addEventListener("submit", (evt) => {
             if(json.success) {
                 // Si el inicio de sesión es exitoso, redirige al usuario
                 localStorage.setItem("idUser", json.id)
+                localStorage.setItem("nameUser", json.nameUser);
                 window.location.href = "/movie-section.html";
             } else {
                 // Si hay un error, muestra el mensaje en la etiqueta de error
