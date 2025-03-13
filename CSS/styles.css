@@ -298,15 +298,22 @@ DEBAJO SECCION DE PELICULA*/
 
 .contain-film{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
+    align-items: center;
+}
 
+#movie-title-container{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .contain-port-pel h1{
     margin-bottom: 4rem;
     padding-top: 2rem;
-    padding-left: 10rem;
+    width: 100%;
     padding-bottom: 2rem;
     font-family: 'Arial', sans-serif;
     font-size: 3rem;
@@ -472,6 +479,8 @@ label:hover span{
 .user-film{
     display: flex;
     align-items: center;
+    padding-top:0.5rem;
+    border-radius: 10px;
 }
 .user-film img{
     height: 4rem;
@@ -495,8 +504,9 @@ label:hover span{
     background-color: wheat;
 }
 
+
 .dark .comments-film{
-    background-color: rgba(255, 255, 255, 0.1)
+    background-color: black
 }
 
 .view-button {
@@ -509,13 +519,79 @@ label:hover span{
     border-radius: 5px;
     padding: 3px;
 }
-
 .comment.oculto {
     display: none;
 }
+.comment{
+    display: block;
+    border: #bdbdbd;
+    border-radius: 10%;
+    border-color: #ccc;
+} 
+
+#contenedor{
+    background-color: rgb(255, 255, 255, 0.1);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.comment .link-profile{
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.comment .user-film time{
+    margin-left: 2rem;
+    color: #ccc;
+}
 
 .comment-film {
-    padding: 10px;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid whitesmoke;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 5px;
+    background-color:rgb(15, 14, 14);
+}
+
+.critique-form .comments-film .view-plus{
+    background-color: black;
+}
+
+.comment-film p{
+    margin-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.arrow-button.oculto{
+    display: none;
+}
+
+/* Estilos para el botón */
+.arrow-button {
+    padding: 6px 6px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Pseudo-elemento para la flecha hacia abajo */
+.arrow-button::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(45deg);
 }
 
 @media screen and (max-width: 480px) {
