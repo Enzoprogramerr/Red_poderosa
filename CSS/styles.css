@@ -283,12 +283,10 @@ DEBAJO SECCION DE PELICULA*/
     display: flex;
     flex-direction: column;
     width: 75%;
-    border: 1px solid #2e2525;
     height: auto;
     background-color: white;
     padding: 5px;
     border-radius: 5px;
-    border:2px solid red;
 }
 
 .dark .profile-film{
@@ -332,17 +330,31 @@ DEBAJO SECCION DE PELICULA*/
     font-size: 18px;
 }
 
-.sec-pel{
-    height: 30rem;
 
+.video-responsive{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
 }
-.sec-pel iframe {
+
+.video-responsive iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* .sec-pel iframe {
     width: 100%;
     height: 100%;
     margin-top: 4rem;
     display: flex;
     justify-content: center;
-}
+} */
 
 
 
@@ -351,7 +363,6 @@ DEBAJO SECCION DE PELICULA*/
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: 40px;
     padding: 20px;
     width: fit-content;
     background-color: transparent;
@@ -364,8 +375,9 @@ DEBAJO SECCION DE PELICULA*/
     padding: 7px;
     color: red;
     font-size: 15px;
-    cursor: pointer;
     margin-bottom: 10px;
+    display: grid;
+    justify-content: center;
 }
 
 .button-pel:hover {
@@ -409,7 +421,7 @@ span{
     opacity: 0;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -30px;
     width: 100%;
     text-align: center;
     height: 45px;
@@ -611,8 +623,6 @@ label:hover span{
     .contain-film img{
         height: auto;
         width: 80%;
-        padding-left: 5rem;
-    
     }
     .description-pel{
         padding-left: 2rem;

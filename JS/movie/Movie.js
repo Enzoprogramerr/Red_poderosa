@@ -27,11 +27,13 @@ class Movie {
                         </section>
                     </article>
                     <section class="sec-pel">
-                        <iframe src="${this.videoURL}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-responsive">
+                            <iframe src="${this.videoURL}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="560" height="400"></iframe>
+                        </div>
                     </section>
                     <section class="comment-calify">
                         <div class="rating-evaluation">
-                            <input class="button-pel" type="submit" value="Agregar a mi lista">
+                            <h2 class="button-pel">Califica la pelicula</h2>
                             <div class="rating">
                                 <input type="radio" name="rate" id="rating-opt5" data-idx="0" value="5" hidden>
                                 <label class="label-movie" for="rating-opt5"><span>Muy Bueno</span></label>
@@ -150,6 +152,13 @@ document.addEventListener("DOMContentLoaded", async function() {
     }
     const movieData = JSON.parse(localStorage.getItem('movieData'));
     showMovie(movieData);
+
+
+    const nombreUsuario = localStorage.getItem("nameUser");
+    if (nombreUsuario) {
+        const saludoUsuario = document.querySelector(".mobile.three h3");
+        saludoUsuario.textContent = `¡Hola ${nombreUsuario}!`;
+    };
 
     const commentButton = document.getElementById('commentButton');
     if (commentButton) {
