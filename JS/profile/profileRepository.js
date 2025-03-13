@@ -1,6 +1,6 @@
-function getUserProfile(success, error) {
-    const userId = 1;
-    // const userId = localStorage.getItem("idUser");
+function getProfile(success, error) {
+    const userId = localStorage.getItem("idUser");
+
     fetch(`http://localhost:5297/User/GetUser?UserId=${userId}`, {
         method: "GET",
         headers: {
@@ -16,7 +16,7 @@ function getUserProfile(success, error) {
     .then((json) => {
         if (json.success) {
             // Crear una instancia de ProfileUser con los datos recibidos
-            const userProfile = new ProfileUser({
+            const userProfile = new Profile({
                 id: json.id,
                 name: json.nameUser,
                 lastName: json.lastnameUser,
