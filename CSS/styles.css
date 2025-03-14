@@ -1774,7 +1774,7 @@ aside {
     height: 4rem;
 }
 
-.form-category input[type="radio"]:hover{
+.form-category input[type="checkbox"]:hover{
     cursor: pointer;
 }
 
@@ -2057,14 +2057,17 @@ footer a{
     }
 
     .title {
-        margin: 1rem 0 2rem 0;
-        display: flex;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 50px auto;
+        height: auto;
     }
-
     .title h2 {
-        display: inline-block;
-        color: white;
+        margin: 0;
+        width: 80%;
+    }
+    .form-category{
+        height: auto;
+        grid-column: span 2;
     }
 
     .best-movie {
