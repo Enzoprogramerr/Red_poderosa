@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(response => response.json())
             .then(json => {
                 console.log(json);
-                if (json.Success) {
+                if (json.success) {
                     // Eliminar datos del usuario del localStorage
                     console.log(localStorage.getItem("idUser"));  // Muestra el valor de idUser o null si no existe
                     localStorage.removeItem("idUser");
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     // Redirigir a la página de inicio de sesión
                     window.location.href = "/index.html";
                 } else {
-                    alert("Error al cerrar sesión: " + json.Message);
+                    alert("Error al cerrar sesión: " + json.message);
                 }
             })
             .catch(error => console.error("Error al cerrar sesión:", error));
